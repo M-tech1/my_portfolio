@@ -11,15 +11,29 @@
 } 
 
 :root{
-/* --color-bg: #1f1f38; */
---color-bg: #00284c;
-/* --color-bg-variant:#2c2c6c; */
---color-bg-variant:#2a356d;
-/* --color-primary:#4db5ff; */
---color-primary:#01989f;
---color-primary-variant: rgba(77, 181, 255, 0.4);
+/* new color scheme */
+--color-bg: #101630;
+--color-bg-variant:#4FB7DE;
+--color-primary:#fff;
+
 --color-white:#fff;
 --color-light:rgba(255, 255, 255, o.6);
+/* --color-bg: #1f1f38; original */
+/* --color-bg: #00284c;  */
+/* --color-bg-variant:#2c2c6c; original */
+/* --color-bg-variant:#2a356d; */
+/* --color-primary:#4db5ff; original */
+
+/* --color-primary:#01989f; original */
+/* --color-primary-variant: rgba(77, 181, 255, 0.4); original */
+
+
+/* Grade colors */
+
+--excellent: #df643f;
+--good: #a73728;
+--fair: #3d1f1d;
+
 
 --transition: all 400ms ease;
 
@@ -38,7 +52,7 @@
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.jpeg);
+  /* background-image: url(../src/assets/bg-texture.jpeg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: luminosity;
@@ -67,6 +81,15 @@ section{
   /* height:100vh ; */
 }
 
+h5{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+h2{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+}
 
 section > h2, section >h5 {
 

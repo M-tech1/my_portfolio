@@ -12,7 +12,7 @@ const Header = () => {
         <div class="content">
           <div class="text-content">
             <div class="text">
-              <h5>Hello I'm</h5>{" "}
+              <h3>Hello, I'm</h3>{" "}
             </div>
             <div class="name">
               <h1>Ake Martins</h1>
@@ -23,9 +23,9 @@ const Header = () => {
               
             </div>
             <div class="job">
-              <span>I'm a</span>
+              {/* <span>I'm a</span> */}
               <div class="typing-text">
-                <span class="one">Fullstack Developer</span>
+                <span class="one">i'm a FullStack Developer</span>
               </div>
             
             </div>

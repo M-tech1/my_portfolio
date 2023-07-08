@@ -46,7 +46,7 @@ const form = useRef();
           <BsWhatsapp className='contact__option-icon'/>
             <h4>whatsApp</h4>
             <h5>+2348065191675</h5>
-            <a href='https://wa.me/2348065191675' target='_blank'>Send a Message</a>
+            <a href='https://wa.me/2348065191675' target='_blank'>Leave a Message</a>
           </article>
         </div>
 
@@ -57,8 +57,6 @@ const form = useRef();
           <textarea name='message' rows='7' placeholder='Your Message' required />
           <button type='submit' className='btn btn-primary' >Send Message</button>
         </form>
-
-
 
       </div>
     </section>

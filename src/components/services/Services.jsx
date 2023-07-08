@@ -16,27 +16,31 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <BiCheck className='services__list-icon'/>
-              <p>Service discription goes here and as simple...</p>
+              <p>Professional logo Design</p>
             </li>
 
             <li>
               <BiCheck className='services__list-icon'/>
-              <p>Service discription goes here and as simple...</p>
+              <p>Branding</p>
             </li>
 
             <li>
               <BiCheck className='services__list-icon'/>
-              <p>Service discription goes here and as simple...</p>
+              <p>Banner & flier Design</p>
             </li>
 
             <li>
               <BiCheck className='services__list-icon'/>
-              <p>Service discription goes here and as simple...</p>
+              <p>Figma Design</p>
             </li>
 
             <li>
               <BiCheck className='services__list-icon'/>
-              <p>Service discription goes here and as simple...</p>
+              <p>Photo frame</p>
+            </li>
+            <li>
+              <BiCheck className='services__list-icon'/>
+              <p>MOG Designs</p>
             </li>
           </ul>
         </article>
@@ -50,28 +54,45 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <BiCheck className='services__list-icon'/>
-              <p>Service discription goes here and as simple...</p>
+              <p>Web Applications</p>
             </li>
 
             <li>
               <BiCheck className='services__list-icon'/>
-              <p>Service discription goes here and as simple...</p>
+              <p>CMS - website</p>
             </li>
 
             <li>
               <BiCheck className='services__list-icon'/>
-              <p>Service discription goes here and as simple...</p>
+              <p>Professional E-Commerce websites</p>
             </li>
 
             <li>
               <BiCheck className='services__list-icon'/>
-              <p>Service discription goes here and as simple...</p>
+              <p>Create professional Blog Site</p>
             </li>
 
             <li>
               <BiCheck className='services__list-icon'/>
-              <p>Service discription goes here and as simple...</p>
+              <p>Create professional Mobile applications</p>
             </li>
+
+            <li>
+              <BiCheck className='services__list-icon'/>
+              <p>Site & App monitizations (Adsense & Admob)</p>
+            </li>
+
+            <li>
+              <BiCheck className='services__list-icon'/>
+              <p>SEO and site optimizations</p>
+            </li>
+
+            <li>
+              <BiCheck className='services__list-icon'/>
+              <p>Site maintainance and management</p>
+            </li>
+
+        
           </ul>
         </article>
 
@@ -85,34 +106,30 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <BiCheck className='services__list-icon'/>
-              <p>Service discription goes here and as simple...</p>
+              <p>Consultation</p>
             </li>
 
             <li>
               <BiCheck className='services__list-icon'/>
-              <p>Service discription goes here and as simple...</p>
+              <p>Forex Bot development and integration</p>
             </li>
 
             <li>
               <BiCheck className='services__list-icon'/>
-              <p>Service discription goes here and as simple...</p>
+              <p>Network and Server installation</p>
             </li>
 
             <li>
               <BiCheck className='services__list-icon'/>
-              <p>Service discription goes here and as simple...</p>
+              <p>Content creation</p>
             </li>
 
             <li>
               <BiCheck className='services__list-icon'/>
-              <p>Service discription goes here and as simple...</p>
+              <p>Social media account management</p>
             </li>
           </ul>
         </article>
-
-
-
-
 
       </div>
 

@@ -23,12 +23,14 @@
     padding:2rem;
     border-radius: 0 0 2rem 2rem;
     border-radius: 0 2rem 1rem rgba(0,0,0,0.1);
+
    }
 
    .service__head h3{
     color: var(--color-bg);
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
     }
 
 
@@ -48,7 +50,8 @@
     }
         
     .service__list p{
-    font-size: 0.9rem;
+    font-size: 1.4rem;
+    font-family: 'Open Sans', sans-serif;
     }
 
 
