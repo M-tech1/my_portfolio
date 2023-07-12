@@ -1,5 +1,5 @@
 import React from 'react'
-import './experience.css'
+import './tool_experience.css'
 import { BsPatchCheckFill } from 'react-icons/bs'
 // import 'bootstrap/dist/css/bootstrap.css';
 // import 'bootstrap/dist/css/bootstrap.css';
@@ -12,8 +12,8 @@ const Experience = () => {
 
 
     <section id='experience'>
-      <h5>The skills I have  </h5>
-      <h2> My Experiences</h2>
+      <h5>my skills & expertise </h5>
+      <h2>Tools & Technologies</h2>
 
     <div className='container experience__container'> 
 

@@ -28,14 +28,14 @@
 
    .service__head h3{
     color: var(--color-bg);
-    font-size: 2rem;
+    font-size: 1.1rem;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     }
 
 
     .service__list{
-     padding:2rem;
+     padding:1rem;
     }
         
     .service__list li{
@@ -50,7 +50,7 @@
     }
         
     .service__list p{
-    font-size: 1.4rem;
+    font-size: 0.8rem;
     font-family: 'Open Sans', sans-serif;
     }
 

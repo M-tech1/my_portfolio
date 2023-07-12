@@ -1,0 +1,39 @@
+.education-section {
+    margin-bottom: 30px;
+  }
+  
+  .education-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .education-item {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .education-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .education-degree, .education-dates {
+    margin-bottom: 10px;
+    color: #888;
+  }
+  
+  .education-description {
+    margin-top: 10px;
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    .education-item {
+      padding: 15px;
+    }
+  }
+  

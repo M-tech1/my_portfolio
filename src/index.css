@@ -27,7 +27,6 @@
 /* --color-primary:#01989f; original */
 /* --color-primary-variant: rgba(77, 181, 255, 0.4); original */
 
-
 /* Grade colors */
 
 --excellent: #df643f;
@@ -53,10 +52,19 @@
   color: var(--color-white);
   line-height: 1.7;
   /* background-image: url(../src/assets/bg-texture.jpeg); */
+  /* opacity: 0.75; */
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: luminosity;
   }
+
+header{
+   background-image: url(../src/assets/bg-texture.jpeg); 
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+
 
 html{
   scroll-behavior: smooth;
@@ -79,23 +87,22 @@ h1{
 section{
   margin-top: 8rem;
   /* height:100vh ; */
+  /* height: 100%; */
 }
 
 h5{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.5rem;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-size: 0.9rem;
 }
 
 h2{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 3rem;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-size: 1.8rem;
 }
 
 section > h2, section >h5 {
-
   text-align: center;
-  color: ver(--color-light);
-
+  color: ver(--color-light); 
 }
 
 
@@ -103,7 +110,6 @@ section > h2{
   color: var(--color-primary);
   margin-bottom: 3rem;
 }
-
 
 .text-light{
   color: var(--color-light);
@@ -125,7 +131,8 @@ a:hover{
   color:var(--color-primary);
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
-  border: 1px solid var(--color-primary);
+  cursor: pointer;
+  border: 1.4px solid var(--color-primary);
   transition: var(--transition);
 }
 
@@ -143,9 +150,12 @@ a:hover{
 
 img{
   display: block;
-  width: 100;
+  width: 100%;
   object-fit: cover;
 }
+
+
+
 
 
 /*################ Media queries (medium devices) ############*/  
