@@ -3,7 +3,7 @@ import "./header.css";
 import CTA from "./CTA";
 import ME from "../../assets/me.png";
 import HeaderSocials from "./HeaderSocials";
-import bg from "../../assets/bg-texture.jpeg";
+// import bg from "../../assets/bg-texture.jpeg";
 
 const Header = () => {
   return (
