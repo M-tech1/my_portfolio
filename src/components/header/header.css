@@ -1,7 +1,9 @@
 header{
+  /* background-image: url(../src/assets/bg-texture.jpeg);  */
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 4rem;
     overflow: hidden;
+ width: 100%;
  
 }
 
@@ -9,6 +11,8 @@ header{
     text-align: center;
     height: 100%;
     position: relative;   
+    width: 100%;
+    justify-content: center;
 }
 
 .text{
@@ -59,15 +63,17 @@ padding: 0.5rem;
 /*==============  ME image =============== */
 .me{
     background: linear-gradient(var(--color-primary), transparent);
-    width:22rem;   
-    height: 30rem;
+    width: 22rem;
     position: absolute;
     left: calc(50% - 11rem);
-    margin-top: 4rem;
+    margin-top: 2rem;
     border-radius: 12rem 12rem 0 0;
-    overflow: hidden;
-    /* padding: 3rem 1.5rem 1.5rem 1.5rem;  */
-    
+    overflow:visible;
+    padding: 3rem 1.5rem 1.5rem 1.5rem; 
+    /* border: 1px solid red; */
+    /* max-height: 900px; */
+  
+
 }
 
 
@@ -81,40 +87,70 @@ padding: 0.5rem;
 } 
 
 
+.typewriter, .h5{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: typing 4s steps(20) infinite, blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 13em; /* Adjust the width as needed */
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+      border-color: transparent;
+  }
+  50% {
+      border-color: orange;
+  }
+}
 
 
 /*============= Media queries (Medium) ===============*/
 @media screen and (max-width: 1024px){
+  
     header{
         height: 68vh;
     }
 
     .me{
+   
       background: linear-gradient(var(--color-primary), transparent);
-      width:22rem;   
-      height: 100%;
-      position: relative;
+      width: 22rem;
+      position: absolute;
       left: calc(50% - 11rem);
-      margin-bottom:0rem;
+      margin-top: 2rem;
       border-radius: 12rem 12rem 0 0;
-      overflow: hidden;
-      /* padding: 3rem 1.5rem 1.5rem 1.5rem;  */
-      
+      overflow:visible;
+      padding: 0.5rem 1rem 1rem 1rem; 
   }
   .me>img{
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
   }   
 }
 
 
 /*============= Media queries (Small) ===============*/
-@media screen and (max-width: 600px){
+@media only screen and (max-width: 600px){
+
     header{
         height: 100vh;
-        /* padding-top: 7rem;
-        overflow: hidden; */ 
+        overflow: hidden; 
     } 
+    .container header__container{
+
+    }
     .header__socials,
     .scroll__down{
         display: none;
@@ -137,14 +173,19 @@ padding: 0.5rem;
     .me{
       background: linear-gradient(var(--color-primary), transparent);
       width:22rem;   
-      height: 100%;
+      height: 80vh;
       position: relative;
       left: calc(50% - 11rem);
       margin-bottom:0rem;
-      border-radius: 12rem 12rem 0 0;
-      overflow: hidden;
-      padding: 3rem 1.5rem 1.5rem 1.5rem; 
+      /* border-radius: 12rem 12rem 0 0; */
       
+ 
+      
+  }
+  .img{
+    /* max-width:100%;
+    height: 50%;
+  object-fit: cover;   */
   }
 
   }

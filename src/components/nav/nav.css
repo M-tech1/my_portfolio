@@ -39,6 +39,11 @@ nav a.active{
     border: 1px solid var(--color-bg);
 }
 
+@media screen and (max-width: 1024px){
+/* nav{
+    height: 90vh;
+} */
+}
 
 @media screen and (max-width: 600px){
     nav{
@@ -53,7 +58,7 @@ nav a.active{
         bottom: 2rem;
         display: flex;
         gap: 0.8rem;
-        border-radius: 3rem;
+        border-radius: 2rem;
         backdrop-filter: blur(15px);
         
      }

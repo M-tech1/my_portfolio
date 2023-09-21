@@ -57,7 +57,15 @@ padding: 0rem 1rem 1rem 1rem ;
 
 
 
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 1024px) { 
+    footer{
+        /* width:100%; */
+        /* width: var(--container-width-md) */
+        display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+    }
     .permalinks{
         flex-direction: column;
         gap:1.5rem;
@@ -67,7 +75,15 @@ padding: 0rem 1rem 1rem 1rem ;
     }
 }
 
-@media screen and(width: 600px) {
+@media screen and(max-width: 600px) {
+footer{
+    /* width: 100%; */
+    /* width: var(--container-width-sm); */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
 .permalinks{
     flex-direction: column;
     gap:1.5rem;
