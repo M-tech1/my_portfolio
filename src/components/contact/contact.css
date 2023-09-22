@@ -11,8 +11,8 @@
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    /* border: 1px solid blue;
-    width: 73%; */
+    /* border: 1px solid blue; */
+    /* width: 73%; */
     
 }
 .contact__container >form{
@@ -25,9 +25,7 @@
     border-radius: 2rem;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    
-    
-   
+     
 }
 
 .contact__option{
@@ -93,20 +91,27 @@ textarea{
         grid-template-columns: 1fr;
         gap: 2rem;
         width: 73%;
+       
     }
+   
     
  }
 
 
  @media screen and (max-width: 600px){
     .container.contact__container{
-       width: var(--container-width-sm)
+       width: var(--container-width-sm);
        /* width: 73%; */
+
+     
        
     }
     .contact__options{
         /* width: var(--container-width-sm) */
-        width: 73%;
+        width: 95%;
+        position: relative;
+        left: 10px;
+
     }
     .contact__container >form{
         

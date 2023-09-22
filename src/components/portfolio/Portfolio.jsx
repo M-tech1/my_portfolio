@@ -34,7 +34,7 @@ const data = [
     image: enverge,
     title: "Enverge global, IT and Tech solutions",
     github: "https://github.com/M-tech1",
-    demo: "https//enverge.ca",
+    demo: "https://enverge.ca/",
   },
 
   {
@@ -49,7 +49,7 @@ const data = [
     image: envergepef,
     title: "An E-commerce website for perfumes and Cosmetics ",
     github: "https//github.com/m-tech1",
-    demo: "https//Envergeperfumes.com",
+    demo: "https//envergeperfumes.com",
   },
 
   {
