@@ -2,7 +2,9 @@
 .portfolio__container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem   ;
+    gap: 2.5rem ;
+    width: 70%;
+
 }
 
 .portfolio__item{
@@ -14,6 +16,7 @@
     border: 1px solid transparent;
     border-radius: 2rem;
     transition: var(--transition);
+    /* height: 40rem; */
 }
 
 .portfolio__item:hover{
@@ -54,5 +57,6 @@
     .portfolio__container{
         grid-template-columns: 1fr;
         gap:1rem;
+        width: 90%;
     }    
 }

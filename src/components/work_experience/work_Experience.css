@@ -4,19 +4,22 @@
 .work_experience{
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem; 
-
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; 
+   
 }
 
 .work_experience > div{
 background: transparent;
-padding: 2.4rem 5rem;
+padding: 1.4rem 2rem;
 border-radius: 2rem;
 border: 1px solid var(--color-primary);
 transition: var(--transition);
-width: 90%;
+/* width: 90%; */
 justify-self: center;
+/* border: 1px solid red; */
+width: 80%;
 }
 
 .work_experience > div:hover{
@@ -37,10 +40,13 @@ justify-self: center;
     margin-bottom: 30px;
   }
   
+
   /* .work-experience h2 {
     font-size: 24px;
     margin-bottom: 15px;
   } */
+  
+
   
   .job {
     margin-bottom: 10px;
@@ -84,7 +90,7 @@ justify-self: center;
      padding: 1rem;
  }
  
-  }
+}
 
 
 

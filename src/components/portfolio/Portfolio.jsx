@@ -1,6 +1,12 @@
 import React from "react";
 import "./portfolio.css";
 import img1 from "../../assets/me.png";
+import vtu from "../../assets/project_img/vtu.JPG";
+import fxbot from "../../assets/project_img/fxbot.JPG";
+import enverge from "../../assets/project_img/enverge.JPG";
+import igclone from "../../assets/project_img/igclone.JPG";
+import envergepef from "../../assets/project_img/enverge perfume.JPG";
+import pokemon from "../../assets/project_img/pokemon.JPG";
 
 // import 'swiper/css/pagination';
 // import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,49 +15,49 @@ import img1 from "../../assets/me.png";
 const data = [
   {
     id: 1,
-    image: img1,
-    title: "crypto currency dashboard ",
-    github: "https//github.com",
-    demo: "https//demo url",
+    image: vtu,
+    title: "Enverge VTU Mobile APP",
+    github: "https://github.com/M-tech1",
+    demo: "https://play.google.com/store/apps/details?id=enverge.android.app",
   },
 
   {
     id: 2,
-    image: img1,
-    title: "crypto currency dashboard ",
-    github: "https//github.com",
-    demo: "https//demo url",
+    image: fxbot,
+    title: "Forex trading platform for selling & trading with BOTs ",
+    github: "https://github.com/M-tech1/fxbot360-website-v1",
+    demo: "http://fxbot360.com/",
   },
 
   {
     id: 3,
-    image: img1,
-    title: "crypto currency dashboard ",
-    github: "https//github.com",
-    demo: "https//demo url",
+    image: enverge,
+    title: "Enverge global, IT and Tech solutions",
+    github: "https://github.com/M-tech1",
+    demo: "https//enverge.ca",
   },
 
   {
     id: 4,
-    image: img1,
-    title: "crypto currency dashboard ",
-    github: "https//github.com",
-    demo: "https//demo url",
+    image: igclone,
+    title: "Instagram clone project - with React.JS",
+    github: "https://github.com/M-tech1/instagram_clone",
+    demo: "https://instagram-clone-7qus3njqe-fxbot.vercel.app/",
   },
   {
     id: 5,
-    image: img1,
-    title: "crypto currency dashboard ",
-    github: "https//github.com",
-    demo: "https//demo url",
+    image: envergepef,
+    title: "An E-commerce website for perfumes and Cosmetics ",
+    github: "https//github.com/m-tech1",
+    demo: "https//Envergeperfumes.com",
   },
 
   {
     id: 6,
-    image: img1,
-    title: "crypto currency dashboard ",
-    github: "https//github.com",
-    demo: "https//demo url",
+    image: pokemon,
+    title: "Pokermon APP",
+    github: "https://github.com/M-tech1/Pokemon-App",
+    demo: "https://serene-medovik-cb4ee7.netlify.app/",
   },
 ];
 
