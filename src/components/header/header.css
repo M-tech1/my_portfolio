@@ -163,8 +163,10 @@ padding: 0.5rem;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        top:-870px;
-        right: 10%;
+        /* top:-870px;
+        right: 10%; */
+        top:-550px;
+        right:10%
 
     }   
     .header__socials::after{
@@ -181,7 +183,7 @@ padding: 0.5rem;
     }
     
     .cta{
-      margin-top: 1.5rem;
+      margin-top: 2.5rem;
       display: flex;
       gap: 1.2rem;
       justify-content: center;
