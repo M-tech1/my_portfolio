@@ -18,6 +18,10 @@ footer a{
     display: inline-block;
 } 
 
+.footer__logo:hover{
+    color:var(--color-bg-variant)
+}
+
 
 .permalinks{
 display: flex;
@@ -26,6 +30,12 @@ justify-content: center;
 gap:1rem;
 margin: 0 auto;
 padding: 0rem 1rem 1rem 1rem ;
+}
+
+.permalinks a:hover{
+      background:  var(--color-bg);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .footer__socials{
@@ -48,6 +58,7 @@ padding: 0rem 1rem 1rem 1rem ;
     background: transparent;
     color: var(--color-bg);
     border-color: var(--color-bg);
+
 }
 
 .footer__copyright{

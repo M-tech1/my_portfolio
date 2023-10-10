@@ -24,7 +24,7 @@ const data = [
   {
     id: 2,
     image: fxbot,
-    title: "Forex trading platform for selling & trading with BOTs ",
+    title: "Forex trading platform for selling BOTs & trading",
     github: "https://github.com/M-tech1/fxbot360-website-v1",
     demo: "http://fxbot360.com/",
   },
@@ -40,7 +40,7 @@ const data = [
   {
     id: 4,
     image: igclone,
-    title: "Instagram clone project - with React.JS",
+    title: "Instagram clone project - React & firebase",
     github: "https://github.com/M-tech1/instagram_clone",
     demo: "https://instagram-clone-7qus3njqe-fxbot.vercel.app/",
   },
@@ -64,7 +64,7 @@ const data = [
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h5>My Recent works</h5>
+      <h5>My Recent</h5>
       <h2>Projects</h2>
 
       <div

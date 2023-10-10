@@ -30,6 +30,7 @@
      
 }
 
+
 .contact__option{
     background: var(--color-bg-variant);
     padding: 0.7rem;
@@ -57,8 +58,19 @@
 .contact__option a{
     margin-top: 0.7rem;
     display: inline-block;
+    font-size: 0.6rem;
+    background: var(--color-bg-variant);
+    border: 1px solid var(--color-bg);
+    border-radius: 20px;
+    padding: 7px;
+    /* color:var(--color-bg) */
+}
+
+.contact__option a:hover{
+    margin-top: 0.7rem;
+    display: inline-block;
     font-size: 1rem;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     /* color:var(--color-bg) */
 }
 
