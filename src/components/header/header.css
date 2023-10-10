@@ -154,20 +154,15 @@ padding: 0.5rem;
         height: 100vh;
         overflow: hidden; 
     } 
-    .container header__container{
-
-    }
+  
     .header__socials{
-        /* display: none; */
+        display: none;
+        /* position: relative;
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: center;
-        /* top:-870px;
+        top:-810px;
         right: 10%; */
-        top:-550px;
-        right:10%
-
     }   
     .header__socials::after{
       display: none;
