@@ -164,6 +164,7 @@ padding: 0.5rem;
         gap: 2px;
         top: -74%;
         left: 3%;
+  
     }   
     .header__socials::after{
       display: none;
