@@ -1,13 +1,13 @@
 import React from "react";
 import "./portfolio.css";
-import img1 from "../../assets/me.png";
-import vtu from "../../assets/project_img/vtu.JPG";
-import fxbot from "../../assets/project_img/fxbot.JPG";
+// import img1 from "../../assets/me.png";
 import enverge from "../../assets/project_img/enverge.JPG";
 import igclone from "../../assets/project_img/igclone.JPG";
-import envergepef from "../../assets/project_img/enverge perfume.JPG";
 import pokemon from "../../assets/project_img/pokemon.JPG";
 import MedEx from "../../assets/project_img/medex.JPG";
+import Vreg from "../../assets/project_img/vreg.JPG";
+import evg from "../../assets/project_img/evg.JPG";
+import mhhf from "../../assets/project_img/mhhf.JPG";
 
 // import 'swiper/css/pagination';
 // import { Swiper, SwiperSlide } from 'swiper/react';
@@ -32,10 +32,10 @@ const data = [
 
   {
     id: 2,
-    image: fxbot,
-    title: "Forex trading platform for selling BOTs & trading",
-    github: "https://github.com/M-tech1/fxbot360-website-v1",
-    demo: "http://fxbot360.com/",
+    image: Vreg,
+    title: "Vehicle Registrations",
+    github: "https://github.com/M-tech1/",
+    demo: "https://vreg.gov.ng/",
   },
 
   {
@@ -45,24 +45,31 @@ const data = [
     github: "https://github.com/M-tech1",
     demo: "https://enverge.ca/",
   },
-
   {
     id: 4,
+    image: evg,
+    title: "interconnect exchange services ",
+    github: "https//github.com/m-tech1",
+    demo: "https://envergecomm.net/",
+  },
+  {
+    id: 5,
+    image: mhhf,
+    title: "Maranatha",
+    github: "https://github.com/M-tech1/",
+    demo: "https://mhhf.ca/",
+  },
+
+  {
+    id: 6,
     image: igclone,
     title: "Instagram clone project - React & firebase",
     github: "https://github.com/M-tech1/instagram_clone",
     demo: "https://instagram-clone-7qus3njqe-fxbot.vercel.app/",
   },
-  {
-    id: 5,
-    image: envergepef,
-    title: "An E-commerce website for perfumes and Cosmetics ",
-    github: "https//github.com/m-tech1",
-    demo: "https//envergeperfumes.com",
-  },
 
   {
-    id: 6,
+    id: 7,
     image: pokemon,
     title: "Pokermon APP",
     github: "https://github.com/M-tech1/Pokemon-App",
