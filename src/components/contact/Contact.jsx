@@ -3,7 +3,7 @@ import "./contact.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
-
+import mx from "../../../../../../";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
 
@@ -38,14 +38,14 @@ const Contact = () => {
             </a>
           </article>
 
-          <article className="contact__option">
+          {/* <article className="contact__option">
             <RiMessengerLine className="contact__option-icon" />
             <h4>Messenger</h4>
             <h5>Martins Ake</h5>
             <a href="https://m.me/martinsake8" target="_blank">
               Let's Chat
             </a>
-          </article>
+          </article> */}
 
           <article className="contact__option">
             <BsWhatsapp className="contact__option-icon" />

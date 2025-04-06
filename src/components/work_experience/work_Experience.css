@@ -1,123 +1,110 @@
 /* section{
     width: 80%;
 } */
-.work_experience{
-
-    display: grid;
-    /* display: flex; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* grid-template-columns: repeat(2, 1fr); */
-    gap: 1rem; 
-    /* border: 1px solid red; */
-    /* width: 50%; */
-
+.work_experience {
+  display: grid;
+  /* display: flex; */
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 1rem;
+  /* border: 1px solid red; */
+  /* width: 50%; */
 }
 
-.work_experience > div{
-background: transparent;
-padding: 1.4rem 2rem;
-border-radius: 2rem;
-border: 1px solid var(--color-primary);
-transition: var(--transition);
-/* width: 90%; */
-justify-self: center;
-/* border: 1px solid red; */
-width: 80%;
+.work_experience > div {
+  background: transparent;
+  padding: 1.4rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+  /* width: 90%; */
+  justify-self: center;
+  /* border: 1px solid red; */
+  width: 80%;
 }
 
-.work_icon{
+.work_icon {
   display: flex;
   flex-direction: row;
   gap: 5px;
 }
 .work_icon > h3 {
   position: relative;
-  bottom:  12px;
+  bottom: 12px;
 }
 
+.work_experience > div:hover {
+  background: transparent;
+  border: 2px solid var(--color-bg-variant);
+  cursor: default;
+}
 
-.work_experience > div:hover{
-    background: transparent;
-    border: 2px solid var(--color-bg-variant);
-    cursor: default;
- }
-
-.work_experience > div h3{
-    text-align: left;  
-    margin-bottom: 0.5rem;
-    color: var(--color-bg-variant);
-    font-size: 1.5rem;
-    font-family: 'Open Sans', sans-serif;
-  } 
+.work_experience > div h3 {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  color: var(--color-bg-variant);
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+}
 
 .work-experience {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+}
 
-  }
-  
-
-  /* .work-experience h2 {
+/* .work-experience h2 {
     font-size: 24px;
     margin-bottom: 15px;
   } */
-  
-  
-  .job {
-    margin-bottom: 2px;
-    width: 100%;
 
-  }
- 
-
-  .job, .h3 {
-    font-size: 1rem;
-    margin-bottom: 3px;
-    
-  }
-  
-  .job-title, .job-dates{
-    margin-bottom: 5px;
-  }
-  
-  .job-description {
-    /* margin-top: 5px; */
-    padding-left: 20px;
-  }
-  
-  .job-description li {
-    margin-bottom: 5px;
-  }
-  
-  
-
-
-  @media screen and (max-width:1024px) {
-    .work_experience{
-     grid-template-columns: 1fr;
-    }
-   .work_experience > div{
-     width: 80%;
-     padding:2rem;
-     margin:0 auto;
-   }
- 
- .work_experience{
-     padding: 1rem;
- }
- 
+.job {
+  margin-bottom: 2px;
+  width: 100%;
 }
 
+.job,
+.h3 {
+  font-size: 1rem;
+  margin-bottom: 3px;
+}
 
+.job-title,
+.job-dates {
+  margin-bottom: 5px;
+}
 
-  /* ================ Media queries (Small Devices) ============== */
+.job-description {
+  /* margin-top: 5px; */
+  /* padding-left: 20px; */
+}
 
- @media screen and (max-width:600px) {
-    .work_experience{
-        gap: 1rem;
-    }
+.job-description li {
+  margin-bottom: 5px;
+}
 
-    .work_experience > div{
-        width: 100%;
-        padding: 2rem 1rem;
-    }
- } 
+@media screen and (max-width: 1024px) {
+  .work_experience {
+    grid-template-columns: 1fr;
+  }
+  .work_experience > div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  .work_experience {
+    padding: 1rem;
+  }
+}
+
+/* ================ Media queries (Small Devices) ============== */
+
+@media screen and (max-width: 600px) {
+  .work_experience {
+    gap: 1rem;
+  }
+
+  .work_experience > div {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+}

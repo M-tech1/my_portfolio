@@ -21,29 +21,32 @@ const About = () => {
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about_icon" />
-              <h5> Experience</h5>
-              <small>5+ years working</small>
+              <h3> Experience</h3>
+              <small>4 + years working</small>
             </article>
 
             <article className="about__card">
               <FiUsers className="about_icon" />
-              <h5>Clients</h5>
+              <h3>Clients</h3>
               <small>25+ Nationwide</small>
             </article>
 
             <article className="about__card">
               <VscFolderLibrary className="about_icon" />
-              <h5> Project</h5>
+              <h3> Project</h3>
               <small>20+ completed</small>
             </article>
           </div>
 
           <p>
-            I'm a software engineer passionate about innovation and technology
-            with skills in both frontend and backend of software development,
-            databases, data analysis, software testing and software development
-            tools. Also possessing strong leadership and management skills in
-            tech-related subjects
+            <small>
+              I’m an ambitious and result oriented Software Engineer with a
+              Bachelor's degree in Computer Engineering and 4 years of working
+              experience, proficient in frontend tools and frameworks,
+              specialized in creating visually appealing and user friendly
+              interfaces while staying abreast of the latest web technologies to
+              deliver responsive and high-perfuming web applications.
+            </small>
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk{" "}

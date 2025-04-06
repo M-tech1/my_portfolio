@@ -7,18 +7,27 @@ import enverge from "../../assets/project_img/enverge.JPG";
 import igclone from "../../assets/project_img/igclone.JPG";
 import envergepef from "../../assets/project_img/enverge perfume.JPG";
 import pokemon from "../../assets/project_img/pokemon.JPG";
+import MedEx from "../../assets/project_img/medex.JPG";
 
 // import 'swiper/css/pagination';
 // import { Swiper, SwiperSlide } from 'swiper/react';
 // import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
 const data = [
+  // {
+  //   id: 1,
+  //   image: vtu,
+  //   title: "Enverge VTU Mobile APP",
+  //   github: "https://github.com/M-tech1",
+  //   demo: "https://play.google.com/store/apps/details?id=enverge.android.app",
+  // },
+
   {
     id: 1,
-    image: vtu,
-    title: "Enverge VTU Mobile APP",
+    image: MedEx,
+    title: "MedEx",
     github: "https://github.com/M-tech1",
-    demo: "https://play.google.com/store/apps/details?id=enverge.android.app",
+    demo: "https://medex.ng/",
   },
 
   {

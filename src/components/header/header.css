@@ -1,207 +1,186 @@
-header{
+header {
   /* background-image: url(../src/assets/bg-texture.jpeg);  */
-    height: 100vh;
-    padding-top: 4rem;
-    overflow: hidden;
- width: 100%;
-
- 
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
 }
 
-.header__container{
-    text-align: center;
-    height: 100vh;
-    position: relative;   
-    width: 100%;
-    justify-content: center;
-    /* margin-top: 0rem; */
-    margin-bottom: 20rem;
+.header__container {
+  text-align: center;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 20rem;
+  padding-top: 15px;
 }
 
-.text{
-padding: 0.5rem;
+.text {
+  padding: 0.5rem;
 }
 
-.h4text{
+.h4text {
   display: none;
 }
 
 /*==============  CTA =============== */
-.cta{
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 1.2em;
-    justify-content: center;   
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2em;
+  justify-content: center;
 }
-
 
 /*==============  Header socials =============== */
 
-.header__socials{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    position: absolute;
-    left:3rem;
-    bottom: 3rem;
-    /* width: 20rem;
-    height: 20rem; */
-} 
-  
-.icon{
-  /* width: 1.4rem;
-  height: 1.4rem; */
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 3rem;
+  bottom: 3rem;
+  /* width: 20rem; */
+  /* height: 20rem; */
 }
 
+/* .icon {
+  width: 1.4rem;
+  height: 1.4rem;
+} */
 
-.header__socials::after{
-    content: '';
-    width: 1px;
-    height: 3rem;
-    background: var(--color-primary);
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 3rem;
+  background: var(--color-primary);
 }
-
 
 /*==============  ME image =============== */
-.me{
-    background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 2rem;
-    border-radius: 12rem 12rem 0 0;
-    overflow:visible;
-    padding: 2rem 1.5rem 1.5rem 1.5rem; 
-    /* border: 1px solid red; */
-    max-height: 500px;
-  
-
+.me {
+  background: linear-gradient(var(--color-primary), transparent);
+  width: 22rem;
+  position: absolute;
+  left: calc(50% - 11rem);
+  margin-top: 2rem;
+  border-radius: 12rem 12rem 0 0;
+  overflow: visible;
+  padding: 2rem 0.5rem 0.5rem 0.5rem;
+  /* border: 1px solid red; */
+  height: 700px;
 }
 
-
 /*==============  scrow down  =============== */
-.scroll__down{
-    position: absolute;
-    right: -0.3rem;
-    bottom:5rem;
-    transform: rotate(90deg);
-    font-size: 0.9rem;
-} 
+.scroll__down {
+  position: absolute;
+  right: -0.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-size: 0.9rem;
+}
 
-
-.typewriter, .h5{
+.typewriter,
+.h5 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 4s steps(20) infinite, blink-caret 1s step-end infinite;
 }
 
 @keyframes typing {
   from {
-      width: 0;
+    width: 0;
   }
   to {
-      width: 13em; /* Adjust the width as needed */
+    width: 13em; /* Adjust the width as needed */
   }
 }
 
 @keyframes blink-caret {
   from,
   to {
-      border-color: transparent;
+    border-color: transparent;
   }
   50% {
-      border-color: orange;
+    border-color: orange;
   }
 }
-
 
 /*============= Media queries (Medium) ===============*/
-@media screen and (max-width: 1024px){
-  
-  .header__container{
+@media screen and (max-width: 1024px) {
+  .header__container {
     margin-top: 1rem;
-}
-    header{
-        height: 68vh;
-    }
-
-    .me{
-   
-      background: linear-gradient(var(--color-primary), transparent);
-      width: 22rem;
-      position: absolute;
-      left: calc(50% - 11rem);
-      margin-top: 2rem;
-      border-radius: 12rem 12rem 0 0;
-      overflow:visible;
-      padding: 0.5rem 1rem 1rem 1rem; 
   }
-    
-}
+  header {
+    height: 68vh;
+  }
 
+  .me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 2rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: visible;
+    padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+  }
+}
 
 /*============= Media queries (Small) ===============*/
-@media only screen and (max-width: 600px){
-
-  .header__container{
+@media only screen and (max-width: 600px) {
+  .header__container {
     margin-top: 1.5rem;
-}
-    header{
-        height: 100vh;
-        overflow: hidden; 
-    } 
-  
-    .header__socials{
-        /* display: none; */
-        position: fixed;
-        display: flex;
-        /* flex-direction: row; */
-        justify-content: center;
-        gap: 2px;
-        top: -74%;
-        left: 3%;
-  
-    }   
-    .header__socials::after{
-      display: none;
   }
-.scroll__down{
-  /* display: none; */
-}
-
-    .header__container{
-      text-align: center;
-      height: 100%;
-      position: absolute;
-    }
-    
-    .cta{
-      margin-top: 2.5rem;
-      display: flex;
-      gap: 1.2rem;
-      justify-content: center;
-    }
-
-    .me{
-      background: linear-gradient(var(--color-primary), transparent);
-      width:22rem;   
-      height: 80vh;
-      position: relative;
-      left: calc(50% - 11rem);
-      margin-bottom:0rem;
-         
+  header {
+    height: 100vh;
+    overflow: hidden;
   }
-  .img{
+
+  .header__socials {
+    /* display: none; */
+    position: fixed;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    gap: 2px;
+    top: -74%;
+    left: 3%;
+  }
+  .header__socials::after {
+    display: none;
+  }
+  .scroll__down {
+    /* display: none; */
+  }
+
+  .header__container {
+    text-align: center;
+    height: 100%;
+    position: absolute;
+  }
+
+  .cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+
+  .me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    height: 80vh;
+    position: relative;
+    left: calc(50% - 11rem);
+    margin-bottom: 0rem;
+  }
+  .img {
     /* max-width:100%;
     height: 50%;
   object-fit: cover;   */
   }
-
-  }
-
-
- 
+}

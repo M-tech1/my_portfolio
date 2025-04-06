@@ -53,7 +53,7 @@ const Experience = () => {
               <BsPatchCheckFill className="experience_icon" />
               <div className="tool">
                 <h4>Bootstrap / tailwind CSS</h4>
-                <text>Intermediate</text>
+                <text> Experieced</text>
               </div>
             </article>
 
@@ -187,7 +187,7 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience_icon" />
               <div className="tool">
-                <h4>MetaTrader > Forex BOT</h4>
+                <h4>MetaTrader: Forex BOT</h4>
                 <text>Experienced</text>
               </div>
             </article>
@@ -216,13 +216,13 @@ const Experience = () => {
               </div>
             </article>
 
-            <article className="experience__details">
+            {/* <article className="experience__details">
               <BsPatchCheckFill className="experience_icon" />
               <div className="tool">
                 <h4>Networking</h4>
                 <text> Experienced</text>
               </div>
-            </article>
+            </article> */}
 
             <article className="experience__details">
               <BsPatchCheckFill className="experience_icon" />
