@@ -8,7 +8,7 @@ import Services from "./components/services/Services.jsx";
 import Portfolio from "./components/portfolio/Portfolio.jsx";
 import Contact from "./components/contact/Contact.jsx";
 import Footer from "./components/footer/Footer.jsx";
-import Education from "./components/education/Education.jsx";
+import Education from "./components/education/Education.tsx";
 
 // import 'bootstrap/dist/css/bootstrap.css';
 
@@ -19,7 +19,7 @@ const App = () => {
       <Nav />
       <About />
       <Work_Experience />
-      {/* <Education /> */}
+      <Education />
       <Portfolio />
       <Tool_Experience />
       <Services />
