@@ -20,7 +20,7 @@ const educationList: EducationItem[] = [
   {
     title: "Advanced Frontend Development",
     institution: "Qwasar Silicon Valley",
-    date: "2022",
+    date: "2023",
     description:
       "Built 4+ projects using HTML, CSS, JavaScript, and React and tailwind CSS",
     certificateLink:
