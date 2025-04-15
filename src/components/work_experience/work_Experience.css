@@ -108,3 +108,60 @@
     padding: 2rem 1rem;
   }
 }
+
+/* ******** new  ********* */
+.job {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  max-width: 600px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.work_icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.job-description {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.job-description li {
+  margin-bottom: 8px;
+}
+
+.more-content {
+  display: none;
+  transition: max-height 900s ease-in-out;
+}
+
+.more-content.show {
+  display: block;
+}
+
+.view-button {
+  background: none;
+  color: #4fb7de;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 0;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.view-button:hover {
+  text-decoration: none;
+}
+
+.readMore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  color: #4fb7de;
+}

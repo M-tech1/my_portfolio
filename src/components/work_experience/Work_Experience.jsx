@@ -1,20 +1,24 @@
-import React from "react";
+import { React, useState } from "react";
 import "./work_Experience.css";
-import { BsPatchCheckFill } from "react-icons/bs";
+// import { BsPatchCheckFill } from "react-icons/bs";
 import { MdWorkHistory } from "react-icons/md";
+import { FaAngleDoubleUp, FaAngleDoubleDown } from "react-icons/fa";
 
 const Work_Experience = () => {
+  const [showMore, setShowMore] = useState(false);
+  const [showMore2, setShowMore2] = useState(false);
+
   return (
     <section id="Work_Experience">
       <h5>Professional </h5>
       <h2>Work Experience</h2>
 
       <div className="work_experience">
+        {/* ********new *********** */}
         <div className="job">
           <div className="work_icon">
             <MdWorkHistory />
             <h3>Outsource Global</h3>
-            {/* <img src="#"></img> */}
           </div>
 
           <p className="job-title">
@@ -23,6 +27,7 @@ const Work_Experience = () => {
           <p className="job-dates">
             <b>Dates :</b> April 2023 - Present
           </p>
+
           <ul className="job-description">
             <li>
               <small>
@@ -47,37 +52,52 @@ const Work_Experience = () => {
               </small>
             </li>
 
-            <li>
-              <small>
-                ● I was also part of the IDEC Dev Team for a national project
-                building a portal for a simpler and smarter end-to-end automated
-                process for the Customs Import Duty Exemption application,
-                working with Next.ts, ShadCN & Tailwind, I built the certificate
-                viewing pages for the IDEC - M&E project, that helped end-users
-                up to 79% easier access to viewing and downloading their
-                certificates.
-              </small>
-            </li>
-            <li>
-              <small>
-                ● Designed and implemented the Medex Logistics Module to
-                optimize the transition and delivery process of medical items
-                procured through the Medex platform. By streamlining workflows
-                and enhancing coordination between stakeholders, the module
-                improved supply chain efficiency by 90%, significantly
-                accelerating delivery times and ensuring seamless operations
-                across the platform.
-              </small>
-            </li>
+            <div className={`more-content ${showMore ? "show" : ""}`}>
+              <li>
+                <small>
+                  ● I was also part of the IDEC Dev Team for a national project
+                  building a portal for a simpler and smarter end-to-end
+                  automated process for the Customs Import Duty Exemption
+                  application, working with Next.ts, ShadCN & Tailwind, I built
+                  the certificate viewing pages for the IDEC - M&E project, that
+                  helped end-users up to 79% easier access to viewing and
+                  downloading their certificates.
+                </small>
+              </li>
+              <li>
+                <small>
+                  ● Designed and implemented the Medex Logistics Module to
+                  optimize the transition and delivery process of medical items
+                  procured through the Medex platform. By streamlining workflows
+                  and enhancing coordination between stakeholders, the module
+                  improved supply chain efficiency by 90%, significantly
+                  accelerating delivery times and ensuring seamless operations
+                  across the platform.
+                </small>
+              </li>
 
-            <li>
-              <small>
-                ● Optimized website performance and conducted regular code
-                reviews.
-              </small>
-            </li>
+              <li>
+                <small>
+                  ● Optimized website performance and conducted regular code
+                  reviews.
+                </small>
+              </li>
+            </div>
           </ul>
+          <div className="readMore">
+            <button
+              className="view-button"
+              onClick={() => setShowMore(!showMore)}
+            >
+              {showMore ? "View less" : "View More..."}
+            </button>
+            <div onClick={() => setShowMore(!showMore)}>
+              {showMore ? <FaAngleDoubleUp /> : <FaAngleDoubleDown />}
+            </div>
+          </div>
         </div>
+
+        {/* ********************* */}
 
         <div className="job">
           <div className="work_icon">
@@ -110,23 +130,35 @@ const Work_Experience = () => {
                 Nigeria and give proper documentation
               </small>
             </li>
-            <li>
-              <small>
-                ● I was also part of the NOC (network operation center) team, to
-                monitor mobile networks and be sure traffic is always up and
-                running, I have gained hands-on experience with VOS3000,
-                Tera-Term, WinBox, Networking, and Telecommunication principles
-                whilst working with the team and deploying Routers, switches and
-                MikroTik Servers
-              </small>
-            </li>
-            <li>
-              {" "}
-              <small>
-                ● Developed and manage website for company and clients
-              </small>
-            </li>
+            <div className={`more-content ${showMore2 ? "show" : ""}`}>
+              <li>
+                <small>
+                  ● I was also part of the NOC (network operation center) team,
+                  to monitor mobile networks and be sure traffic is always up
+                  and running, I have gained hands-on experience with VOS3000,
+                  Tera-Term, WinBox, Networking, and Telecommunication
+                  principles whilst working with the team and deploying Routers,
+                  switches and MikroTik Servers
+                </small>
+              </li>
+              <li>
+                <small>
+                  ● Developed and manage website for company and clients
+                </small>
+              </li>
+            </div>
           </ul>
+          <div className="readMore">
+            <button
+              className="view-button"
+              onClick={() => setShowMore2(!showMore2)}
+            >
+              {showMore2 ? "View less" : "View More..."}
+            </button>
+            <div onClick={() => setShowMore2(!showMore2)}>
+              {showMore2 ? <FaAngleDoubleUp /> : <FaAngleDoubleDown />}
+            </div>
+          </div>
         </div>
 
         <div className="job">

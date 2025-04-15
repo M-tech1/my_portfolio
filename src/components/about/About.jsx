@@ -39,14 +39,40 @@ const About = () => {
           </div>
 
           <p>
-            <small>
+            {/* <small>
               I’m an ambitious and result oriented Software Engineer with a
               Bachelor's degree in Computer Engineering and 4 years of working
               experience, proficient in frontend tools and frameworks,
               specialized in creating visually appealing and user friendly
               interfaces while staying abreast of the latest web technologies to
               deliver responsive and high-perfuming web applications.
+            </small> */}
+            <small>
+              I am a skilled Full-Stack Engineer with over 4 years of experience
+              building efficient and scalable software solutions across diverse
+              industries. I’ve led and contributed to impactful projects in
+              healthcare, government, eCommerce, and education. I excel at
+              bridging the gap between technical teams and business
+              stakeholders, translating complex requirements into clear,
+              actionable insights and ensuring smooth collaboration across all
+              levels of an organization.
             </small>
+            {/* <small>
+              I am a skilled Full-Stack Engineer with over 4 years of experience
+              building efficient and scalable software solutions across diverse
+              industries. I’ve led and contributed to impactful projects in
+              healthcare, government, eCommerce, and education
+              <br />
+              My technical expertise spans designing robust software
+              architectures using industry-standard design patterns and modern
+              technologies like C, C++, Ruby on Rails, Node.js, GraphQL,
+              TypeScript, React.js, and Next.js. In addition to my technical
+              strengths, I am an articulate communicator with excellent English
+              language skills both written and spoken. I excel at bridging the
+              gap between technical teams and business stakeholders, translating
+              complex requirements into clear, actionable insights and ensuring
+              smooth collaboration across all levels of an organization.
+            </small> */}
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk{" "}
