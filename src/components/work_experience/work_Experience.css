@@ -14,13 +14,14 @@
 .work_experience > div {
   background: transparent;
   padding: 1.4rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid var(--color-primary);
+  border-radius: 1rem;
+  border: 0.5px solid var(--color-primary);
   transition: var(--transition);
   /* width: 90%; */
   justify-self: center;
   /* border: 1px solid red; */
-  width: 80%;
+  /* width: 80%; */
+  width: 100%;
 }
 
 .work_icon {
@@ -35,7 +36,7 @@
 
 .work_experience > div:hover {
   background: transparent;
-  border: 2px solid var(--color-bg-variant);
+  border: 1px solid var(--color-bg-variant);
   cursor: default;
 }
 
@@ -75,6 +76,7 @@
 .job-description {
   /* margin-top: 5px; */
   /* padding-left: 20px; */
+  width: 100%;
 }
 
 .job-description li {

@@ -1,28 +1,14 @@
-import React from "react";
 import "./portfolio.css";
-// import img1 from "../../assets/me.png";
 import enverge from "../../assets/project_img/enverge.JPG";
-// import igclone from "../../assets/project_img/igclone.JPG";
 import pokemon from "../../assets/project_img/pokemon.JPG";
 import MedEx from "../../assets/project_img/medex.JPG";
 import Vreg from "../../assets/project_img/vreg.PNG";
 import evg from "../../assets/project_img/evg.JPG";
-import mhhf from "../../assets/project_img/mhhf.JPG";
 import aimedcare from "../../assets/project_img/aiMedcare.JPG";
-
-// import 'swiper/css/pagination';
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import azana from "../../assets/project_img/azana.png";
+import vvs from "../../assets/project_img/vvs.png";
 
 const data = [
-  // {
-  //   id: 1,
-  //   image: vtu,
-  //   title: "Enverge VTU Mobile APP",
-  //   github: "https://github.com/M-tech1",
-  //   demo: "https://play.google.com/store/apps/details?id=enverge.android.app",
-  // },
-
   {
     id: 1,
     image: aimedcare,
@@ -49,36 +35,35 @@ const data = [
 
   {
     id: 4,
+    image: vvs,
+    title: "Vihecle Verification system",
+    github: "https://github.com/",
+    demo: "https://vvs.ng",
+  },
+  {
+    id: 5,
+    image: azana,
+    title: "Azana",
+    github: "https://github.com/",
+    demo: "https://azana.com",
+  },
+  {
+    id: 6,
     image: enverge,
     title: "Enverge global, IT and Tech solutions",
     github: "https://github.com/M-tech1",
     demo: "https://enverge.ca/",
   },
   {
-    id: 5,
+    id: 7,
     image: evg,
     title: "interconnect exchange services ",
     github: "https//github.com/m-tech1",
     demo: "https://envergecomm.net/",
   },
-  {
-    id: 6,
-    image: mhhf,
-    title: "Maranatha",
-    github: "https://github.com/M-tech1/",
-    demo: "https://mhhf.ca/",
-  },
-
-  // {
-  //   id: 7,
-  //   image: igclone,
-  //   title: "Instagram clone project - React & firebase",
-  //   github: "https://github.com/M-tech1/instagram_clone",
-  //   demo: "https://instagram-clone-7qus3njqe-fxbot.vercel.app/",
-  // },
 
   {
-    id: 7,
+    id: 8,
     image: pokemon,
     title: "Pokermon APP",
     github: "https://github.com/M-tech1/Pokemon-App",
@@ -92,14 +77,7 @@ const Portfolio = () => {
       <h5>My Recent</h5>
       <h2>Projects</h2>
 
-      <div
-        className="container portfolio__container"
-        // modules={[Navigation, Pagination, Scrollbar, A11y]}
-        // spaceBetween={20}
-        // slidesPerView={1}
-        // navigation
-        // pagination={{ clickable: true }}
-      >
+      <div className="container portfolio__container">
         {data.map(({ id, image, title, github, demo }) => {
           return (
             <div key={id} className="portfolio__item">

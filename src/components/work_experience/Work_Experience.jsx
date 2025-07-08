@@ -17,7 +17,7 @@ const Work_Experience = () => {
         {/* ********new *********** */}
         <div className="job">
           <div className="work_icon">
-            <MdWorkHistory />
+            {/* <MdWorkHistory /> */}
             <h3>Outsource Global</h3>
           </div>
 
@@ -101,7 +101,7 @@ const Work_Experience = () => {
 
         <div className="job">
           <div className="work_icon">
-            <MdWorkHistory />
+            {/* <MdWorkHistory /> */}
             <h3>Enverge Limited</h3>
           </div>
 
@@ -163,7 +163,7 @@ const Work_Experience = () => {
 
         <div className="job">
           <div className="work_icon">
-            <MdWorkHistory />
+            {/* <MdWorkHistory /> */}
             <h3>Mitcrux Limited</h3>
           </div>
           <p className="job-title">
@@ -196,7 +196,7 @@ const Work_Experience = () => {
 
         <div className="job">
           <div className="work_icon">
-            <MdWorkHistory />
+            {/* <MdWorkHistory /> */}
             <h3>Ai-MedCare</h3>
           </div>
           <p className="job-title">
@@ -225,7 +225,7 @@ const Work_Experience = () => {
 
         <div className="job">
           <div className="work_icon">
-            <MdWorkHistory />
+            {/* <MdWorkHistory /> */}
             <h3>FxBot360</h3>
           </div>
           <p className="job-title">
@@ -262,7 +262,7 @@ const Work_Experience = () => {
 
         <div className="job">
           <div className="work_icon">
-            <MdWorkHistory />
+            {/* <MdWorkHistory /> */}
             <h3>Digital Shortlets </h3>
           </div>
           <p className="job-title">
