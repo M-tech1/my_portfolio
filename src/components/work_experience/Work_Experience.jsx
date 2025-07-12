@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import "./work_Experience.css";
 // import { BsPatchCheckFill } from "react-icons/bs";
-import { MdWorkHistory } from "react-icons/md";
+// import { MdWorkHistory } from "react-icons/md";
 import { FaAngleDoubleUp, FaAngleDoubleDown } from "react-icons/fa";
 
 const Work_Experience = () => {

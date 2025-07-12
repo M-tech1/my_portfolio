@@ -1,9 +1,9 @@
 import "./portfolio.css";
 import enverge from "../../assets/project_img/enverge.JPG";
-import pokemon from "../../assets/project_img/pokemon.JPG";
+// import pokemon from "../../assets/project_img/pokemon.JPG";
 import MedEx from "../../assets/project_img/medex.JPG";
 import Vreg from "../../assets/project_img/vreg.PNG";
-import evg from "../../assets/project_img/evg.JPG";
+// import evg from "../../assets/project_img/evg.JPG";
 import aimedcare from "../../assets/project_img/aiMedcare.JPG";
 import azana from "../../assets/project_img/azana.png";
 import vvs from "../../assets/project_img/vvs.png";
