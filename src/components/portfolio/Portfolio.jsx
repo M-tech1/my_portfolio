@@ -38,7 +38,7 @@ const data = [
     image: vvs,
     title: "Vihecle Verification system",
     github: "https://github.com/",
-    demo: "https://vvs.ng",
+    demo: "https://vvs.ng/?code=PS6bc416kEyK",
   },
   {
     id: 5,
@@ -54,21 +54,14 @@ const data = [
     github: "https://github.com/M-tech1",
     demo: "https://enverge.ca/",
   },
-  {
-    id: 7,
-    image: evg,
-    title: "interconnect exchange services ",
-    github: "https//github.com/m-tech1",
-    demo: "https://envergecomm.net/",
-  },
 
-  {
-    id: 8,
-    image: pokemon,
-    title: "Pokermon APP",
-    github: "https://github.com/M-tech1/Pokemon-App",
-    demo: "https://serene-medovik-cb4ee7.netlify.app/",
-  },
+  // {
+  //   id: 7,
+  //   image: pokemon,
+  //   title: "Pokermon APP",
+  //   github: "https://github.com/M-tech1/Pokemon-App",
+  //   demo: "https://serene-medovik-cb4ee7.netlify.app/",
+  // },
 ];
 
 const Portfolio = () => {
