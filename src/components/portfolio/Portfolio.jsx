@@ -7,10 +7,18 @@ import Vreg from "../../assets/project_img/vreg.PNG";
 import aimedcare from "../../assets/project_img/aiMedcare.JPG";
 import azana from "../../assets/project_img/azana.png";
 import vvs from "../../assets/project_img/vvs.png";
+import bead from "../../assets/project_img/beadPage.jpg";
 
 const data = [
   {
     id: 1,
+    image: bead,
+    title: "Bead",
+    github: "https://github.com/M-tech1",
+    demo: "https://bead.com.ng",
+  },
+  {
+    id: 2,
     image: aimedcare,
     title: "aiMedcare Solution",
     github: "https://github.com/M-tech1/ai_MedCare",
@@ -18,7 +26,7 @@ const data = [
   },
 
   {
-    id: 2,
+    id: 3,
     image: MedEx,
     title: "MedEx",
     github: "https://github.com/M-tech1",
@@ -26,7 +34,7 @@ const data = [
   },
 
   {
-    id: 3,
+    id: 4,
     image: Vreg,
     title: "Vehicle Registrations",
     github: "https://github.com/M-tech1/",
@@ -34,21 +42,21 @@ const data = [
   },
 
   {
-    id: 4,
+    id: 5,
     image: vvs,
     title: "Vihecle Verification system",
     github: "https://github.com/",
     demo: "https://vvs.ng/?code=PS6bc416kEyK",
   },
   {
-    id: 5,
+    id: 6,
     image: azana,
     title: "Azana",
     github: "https://github.com/",
     demo: "https://azana.com",
   },
   {
-    id: 6,
+    id: 7,
     image: enverge,
     title: "Enverge global, IT and Tech solutions",
     github: "https://github.com/M-tech1",
