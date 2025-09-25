@@ -6,6 +6,7 @@ import aimedcare from "../../assets/project_img/aiMedcare.JPG";
 import azana from "../../assets/project_img/azana.png";
 import vvs from "../../assets/project_img/vvs.png";
 import bead from "../../assets/project_img/beadPage.jpg";
+import fxbot from "../../assets/project_img/fxbot360.jpg";
 
 const data = [
   {
@@ -61,13 +62,13 @@ const data = [
     demo: "https://enverge.ca/",
   },
 
-  // {
-  //   id: 7,
-  //   image: pokemon,
-  //   title: "Pokermon APP",
-  //   github: "https://github.com/M-tech1/Pokemon-App",
-  //   demo: "https://serene-medovik-cb4ee7.netlify.app/",
-  // },
+  {
+    id: 8,
+    image: fxbot,
+    title: "Forex Trading BOTs",
+    github: "https://github.com/M-tech1/",
+    demo: "https://fxbot360-website-v1.vercel.app/",
+  },
 ];
 
 const Portfolio = () => {
