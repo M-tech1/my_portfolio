@@ -7,17 +7,25 @@ import azana from "../../assets/project_img/azana.png";
 import vvs from "../../assets/project_img/vvs.png";
 import bead from "../../assets/project_img/beadPage.jpg";
 import fxbot from "../../assets/project_img/fxbot360.jpg";
+import eugym from "../../assets/project_img/eugym.jpg";
 
 const data = [
   {
     id: 1,
+    image: eugym,
+    title: "Eugym Fitness",
+    github: "#",
+    demo: "https://eugym-fe.vercel.app/",
+  },
+  {
+    id: 2,
     image: bead,
     title: "Bead",
     github: "https://github.com/M-tech1",
     demo: "https://bead.com.ng",
   },
   {
-    id: 2,
+    id: 3,
     image: aimedcare,
     title: "aiMedcare Solution",
     github: "https://github.com/M-tech1/ai_MedCare",
@@ -25,7 +33,7 @@ const data = [
   },
 
   {
-    id: 3,
+    id: 4,
     image: MedEx,
     title: "MedEx",
     github: "https://github.com/M-tech1",
@@ -33,7 +41,7 @@ const data = [
   },
 
   {
-    id: 4,
+    id: 5,
     image: Vreg,
     title: "Vehicle Registrations",
     github: "https://github.com/M-tech1/",
@@ -41,21 +49,21 @@ const data = [
   },
 
   {
-    id: 5,
+    id: 6,
     image: vvs,
     title: "Vihecle Verification system",
     github: "https://github.com/",
     demo: "https://vvs.ng/?code=PS6bc416kEyK",
   },
   {
-    id: 6,
+    id: 7,
     image: azana,
     title: "Azana",
     github: "https://github.com/",
     demo: "https://azana.com",
   },
   {
-    id: 7,
+    id: 8,
     image: enverge,
     title: "Enverge global, IT and Tech solutions",
     github: "https://github.com/M-tech1",
@@ -63,7 +71,7 @@ const data = [
   },
 
   {
-    id: 8,
+    id: 9,
     image: fxbot,
     title: "Forex Trading BOTs",
     github: "https://github.com/M-tech1/",
