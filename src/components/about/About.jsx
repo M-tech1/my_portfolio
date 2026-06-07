@@ -64,7 +64,7 @@ const About = () => {
 
           <div className="about__divider" />
 
-          <p>
+          <p className="about__bio">
             Results-driven Software Engineer and AI Enthusiast with over 6years
             of experience designing scalable, high-performance web applications
             on the Frontend domain. Passionate about software architecture,
