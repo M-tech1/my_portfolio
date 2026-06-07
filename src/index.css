@@ -17,7 +17,12 @@
   --color-primary: #fff;
 
   --color-white: #fff;
-  --color-light: rgba(255, 255, 255, o.6);
+  --color-light: rgba(255, 255, 255, 0.6);
+  --color-glass: rgba(255, 255, 255, 0.05);
+  --color-glass-border: rgba(255, 255, 255, 0.12);
+  --color-glow: rgba(79, 183, 222, 0.35);
+  --color-glow-strong: rgba(79, 183, 222, 0.6);
+  --color-gradient-text: linear-gradient(135deg, #4FB7DE, #ffffff);
   /* --color-bg: #1f1f38; original */
   /* --color-bg: #00284c;  */
   /* --color-bg-variant:#2c2c6c; original */
@@ -107,7 +112,7 @@ h2 {
 section>h2,
 section>h5 {
   text-align: center;
-  color: ver(--color-light);
+  color: var(--color-light);
 }
 
 
@@ -159,7 +164,46 @@ img {
   object-fit: cover;
 }
 
+/* Gradient text utility */
+.gradient-text {
+  background: var(--color-gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
+/* Section subtitle override */
+section > h5 {
+  color: var(--color-bg-variant);
+  letter-spacing: 0.05em;
+}
+
+/* Section heading gradient */
+section > h2 {
+  background: var(--color-gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 3rem;
+}
+
+/* Scroll reveal */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 600px) {
+  [data-reveal] {
+    transform: translateY(20px);
+  }
+}
 
 /*################ Media queries (medium devices) ############*/
 
