@@ -7,7 +7,8 @@ import aimedcare from "../../assets/project_img/aiMedcare.JPG";
 import azana from "../../assets/project_img/azana.png";
 import vvs from "../../assets/project_img/vvs.png";
 import bead from "../../assets/project_img/beadPage.jpg";
-import fxbot from "../../assets/project_img/fxbot360.jpg";
+// import fxbot from "../../assets/project_img/fxbot360.jpg";
+import fxbot360 from "../../assets/project_img/fxbot360.jpg";
 import eugym from "../../assets/project_img/eugym.jpg";
 
 const data = [
@@ -77,7 +78,7 @@ const data = [
   },
   {
     id: 9,
-    image: fxbot,
+    image: fxbot360,
     title: "Forex Trading BOTs",
     category: "Fintech",
     github: "https://github.com/M-tech1/",
