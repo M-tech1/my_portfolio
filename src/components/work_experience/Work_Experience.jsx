@@ -9,7 +9,7 @@ const Work_Experience = () => {
   const [showMore2, setShowMore2] = useState(false);
 
   return (
-    <section id="Work_Experience">
+    <section id="Work_Experience" data-reveal>
       <h5>Professional </h5>
       <h2>Work Experience</h2>
 

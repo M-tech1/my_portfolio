@@ -39,7 +39,7 @@ const educationList: EducationItem[] = [
 
 const Education = () => {
   return (
-    <section className="education-section">
+    <section className="education-section" data-reveal>
       <h2 className="section-title">Education & Certifications</h2>
       <div className="education-list">
         {educationList.map((item, index) => (
