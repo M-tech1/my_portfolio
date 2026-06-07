@@ -3,25 +3,26 @@ import "./header.css";
 import CTA from "./CTA";
 import ME from "../../assets/me.png";
 import HeaderSocials from "./HeaderSocials";
-// import bg from "../../assets/bg-texture.jpeg";
 
 const Header = () => {
   return (
     <>
       <header className="header" id="header">
-        <div class="container header__container">
+        <div className="container header__container" data-reveal>
           <h5>Hello, I'm</h5>
-          <h1> Ake Martins</h1>
+          <h1 className="gradient-text"> Ake Martins</h1>
           <h5 className="typewriter">Software Engineer</h5>
           <CTA />
           <HeaderSocials />
 
           <div className="me">
+            <div className="me__glow" />
             <img className="img" src={ME} alt="me" />
           </div>
 
           <a href="#contact" className="scroll__down">
-            Scroll down
+            <span>Scroll down</span>
+            <span className="scroll__arrow">↓</span>
           </a>
         </div>
       </header>

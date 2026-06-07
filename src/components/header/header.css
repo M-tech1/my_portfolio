@@ -1,8 +1,8 @@
 header {
-  /* background-image: url(../src/assets/bg-texture.jpeg);  */
   height: 100vh;
   overflow: hidden;
   width: 100%;
+  position: relative;
 }
 
 .header__container {
@@ -11,28 +11,43 @@ header {
   position: relative;
   width: 100%;
   justify-content: center;
-  margin-bottom: 20rem;
   padding-top: 15px;
 }
 
-.text {
-  padding: 0.5rem;
-}
-
-.h4text {
-  display: none;
-}
-
-/*==============  CTA =============== */
+/* CTA buttons — glass style */
 .cta {
   margin-top: 2.5rem;
   display: flex;
-  gap: 1.2em;
+  gap: 1.2rem;
   justify-content: center;
 }
 
-/*==============  Header socials =============== */
+.cta .btn {
+  backdrop-filter: blur(10px);
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  transition: var(--transition);
+}
 
+.cta .btn:hover {
+  background: rgba(79, 183, 222, 0.15);
+  border-color: var(--color-bg-variant);
+  box-shadow: 0 0 18px var(--color-glow);
+  color: var(--color-white);
+  transform: translateY(-3px);
+}
+
+.cta .btn-primary {
+  background: var(--color-bg-variant);
+  color: var(--color-bg);
+}
+
+.cta .btn-primary:hover {
+  background: #fff;
+  box-shadow: 0 0 20px var(--color-glow-strong);
+}
+
+/* Header socials */
 .header__socials {
   display: flex;
   flex-direction: column;
@@ -41,14 +56,17 @@ header {
   position: absolute;
   left: 3rem;
   bottom: 3rem;
-  /* width: 20rem; */
-  /* height: 20rem; */
 }
 
-/* .icon {
-  width: 1.4rem;
-  height: 1.4rem;
-} */
+.header__socials a {
+  transition: var(--transition);
+}
+
+.header__socials a:hover {
+  transform: translateY(-3px);
+  color: var(--color-bg-variant);
+  filter: drop-shadow(0 0 6px var(--color-glow-strong));
+}
 
 .header__socials::after {
   content: "";
@@ -57,130 +75,130 @@ header {
   background: var(--color-primary);
 }
 
-/*==============  ME image =============== */
+/* Profile image */
 .me {
-  background: linear-gradient(var(--color-primary), transparent);
-  width: 22rem;
   position: absolute;
   left: calc(50% - 11rem);
   margin-top: 2rem;
+  width: 22rem;
+  height: 700px;
   border-radius: 12rem 12rem 0 0;
   overflow: visible;
   padding: 2rem 0.5rem 0.5rem 0.5rem;
-  /* border: 1px solid red; */
-  height: 700px;
 }
 
-/*==============  scrow down  =============== */
+.me__glow {
+  position: absolute;
+  inset: -20px;
+  border-radius: 12rem 12rem 0 0;
+  background: radial-gradient(ellipse at center, var(--color-glow) 0%, transparent 70%);
+  animation: glowPulse 3s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+.me .img {
+  position: relative;
+  z-index: 1;
+  animation: float 6s ease-in-out infinite;
+  filter: drop-shadow(0 0 20px var(--color-glow));
+  border-radius: 12rem 12rem 0 0;
+  background: linear-gradient(var(--color-primary), transparent);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+
+@keyframes glowPulse {
+  0%   { opacity: 0.4; }
+  100% { opacity: 0.8; }
+}
+
+/* Scroll down */
 .scroll__down {
   position: absolute;
   right: -0.3rem;
   bottom: 5rem;
   transform: rotate(90deg);
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.typewriter,
-.h5 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
+.scroll__arrow {
+  display: inline-block;
+  animation: bounce 1.5s ease-in-out infinite;
+  transform: rotate(-90deg);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: rotate(-90deg) translateX(0); }
+  50%       { transform: rotate(-90deg) translateX(6px); }
+}
+
+/* Typewriter */
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid var(--color-bg-variant);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
   animation: typing 4s steps(20) infinite, blink-caret 1s step-end infinite;
 }
 
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 13em; /* Adjust the width as needed */
-  }
+  from { width: 0; }
+  to   { width: 13em; }
 }
 
 @keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
+  from, to { border-color: transparent; }
+  50%      { border-color: var(--color-bg-variant); }
 }
 
-/*============= Media queries (Medium) ===============*/
+/* Medium devices */
 @media screen and (max-width: 1024px) {
-  .header__container {
-    margin-top: 1rem;
-  }
-  header {
-    height: 68vh;
-  }
-
+  header { height: 68vh; }
+  .header__container { margin-top: 1rem; }
   .me {
-    background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 2rem;
-    border-radius: 12rem 12rem 0 0;
-    overflow: visible;
-    padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+    width: 20rem;
+    left: calc(50% - 10rem);
   }
 }
 
-/*============= Media queries (Small) ===============*/
+/* Small devices */
 @media only screen and (max-width: 600px) {
-  .header__container {
-    margin-top: 1.5rem;
-  }
-  header {
-    height: 100vh;
-    overflow: hidden;
-  }
+  header { height: 100vh; overflow: hidden; }
+  .header__container { margin-top: 1.5rem; height: 100%; position: absolute; text-align: center; }
 
   .header__socials {
-    /* display: none; */
     position: fixed;
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: center;
-    gap: 2px;
-    top: -74%;
-    left: 3%;
-  }
-  .header__socials::after {
+    flex-direction: row;
+    gap: 0.8rem;
+    top: auto;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
     display: none;
   }
-  .scroll__down {
-    /* display: none; */
-  }
+  .header__socials::after { display: none; }
 
-  .header__container {
-    text-align: center;
-    height: 100%;
-    position: absolute;
-  }
+  .scroll__down { display: none; }
 
   .cta {
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 1.2rem;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
+  .cta .btn { width: 80%; text-align: center; }
+
   .me {
-    background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
-    height: 80vh;
+    width: 16rem;
+    height: 70vh;
+    left: calc(50% - 8rem);
     position: relative;
-    left: calc(50% - 11rem);
-    margin-bottom: 0rem;
-  }
-  .img {
-    /* max-width:100%;
-    height: 50%;
-  object-fit: cover;   */
+    margin-bottom: 0;
   }
 }
