@@ -8,7 +8,8 @@ import azana from "../../assets/project_img/azana.png";
 import vvs from "../../assets/project_img/vvs.png";
 import bead from "../../assets/project_img/beadPage.jpg";
 import eugym from "../../assets/project_img/eugym.jpg";
-import fxbo360 from "../../assets/project_img/fxbot360.jpg";
+import fxbot360 from "../../assets/project_img/fxbot.jpg";
+// import fxbo360 from "../../assets/project_img/fxbot360.jpg";
 
 const data = [
   {
