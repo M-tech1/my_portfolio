@@ -10,11 +10,17 @@ import Contact from "./components/contact/Contact.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Education from "./components/education/Education.tsx";
 
-// import 'bootstrap/dist/css/bootstrap.css';
+const BackgroundOrbs = () => (
+  <div className="bg-orbs">
+    <div className="bg-orb" />
+    <div className="bg-orb" />
+  </div>
+);
 
 const App = () => {
   return (
     <>
+      <BackgroundOrbs />
       <Header />
       <Nav />
       <About />

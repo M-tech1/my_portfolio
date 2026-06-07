@@ -231,3 +231,49 @@ section > h2 {
     margin-bottom: 2rem;
   }
 }
+
+/* Background orbs */
+.bg-orbs {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.12;
+  background: radial-gradient(circle, #4FB7DE, transparent 70%);
+  animation: orbDrift 18s ease-in-out infinite alternate;
+}
+
+.bg-orb:nth-child(1) {
+  width: 600px;
+  height: 600px;
+  top: -100px;
+  right: -100px;
+  animation-duration: 20s;
+}
+
+.bg-orb:nth-child(2) {
+  width: 500px;
+  height: 500px;
+  bottom: 10%;
+  left: -100px;
+  animation-duration: 15s;
+  animation-delay: -7s;
+}
+
+@keyframes orbDrift {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(40px, 30px) scale(1.08); }
+  100% { transform: translate(-20px, 50px) scale(0.95); }
+}
+
+@media screen and (max-width: 600px) {
+  .bg-orb:nth-child(1) { width: 350px; height: 350px; }
+  .bg-orb:nth-child(2) { width: 280px; height: 280px; }
+}
