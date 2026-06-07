@@ -1,37 +1,33 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./contact.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
-import { db } from "../../firebase";
-import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import emailjs from "emailjs-com";
 
 const STATUS = { idle: "idle", sending: "sending", success: "success", error: "error" };
 
 const Contact = () => {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const form = useRef();
   const [status, setStatus] = useState(STATUS.idle);
 
-  const handleChange = (e) => {
-    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
-  const handleSubmit = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
     setStatus(STATUS.sending);
 
-    try {
-      await addDoc(collection(db, "contact_messages"), {
-        name: form.name,
-        email: form.email,
-        message: form.message,
-        sentAt: serverTimestamp(),
+    emailjs
+      .sendForm(
+        "service_09ts22j",
+        "template_r153v2a",
+        form.current,
+        "5mC0J-zjKbwpA-hpG"
+      )
+      .then(() => {
+        setStatus(STATUS.success);
+        e.target.reset();
+      })
+      .catch(() => {
+        setStatus(STATUS.error);
       });
-      setStatus(STATUS.success);
-      setForm({ name: "", email: "", message: "" });
-    } catch (err) {
-      console.error("Failed to send message:", err);
-      setStatus(STATUS.error);
-    }
   };
 
   return (
@@ -60,13 +56,11 @@ const Contact = () => {
           </article>
         </div>
 
-        <form onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="name"
             placeholder="Your Full Name"
-            value={form.name}
-            onChange={handleChange}
             required
             disabled={status === STATUS.sending}
           />
@@ -74,8 +68,6 @@ const Contact = () => {
             type="email"
             name="email"
             placeholder="Your Email"
-            value={form.email}
-            onChange={handleChange}
             required
             disabled={status === STATUS.sending}
           />
@@ -83,8 +75,6 @@ const Contact = () => {
             name="message"
             rows="7"
             placeholder="Your Message"
-            value={form.message}
-            onChange={handleChange}
             required
             disabled={status === STATUS.sending}
           />
@@ -100,11 +90,7 @@ const Contact = () => {
             </p>
           )}
 
-          <button
-            type="submit"
-            className="btn btn-primary"
-            disabled={status === STATUS.sending}
-          >
+          <button type="submit" className="btn btn-primary" disabled={status === STATUS.sending}>
             {status === STATUS.sending ? "Sending..." : "Send Message"}
           </button>
         </form>
