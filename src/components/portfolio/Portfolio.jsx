@@ -8,8 +8,9 @@ import azana from "../../assets/project_img/azana.png";
 import vvs from "../../assets/project_img/vvs.png";
 import bead from "../../assets/project_img/beadPage.jpg";
 import eugym from "../../assets/project_img/eugym.jpg";
-import fxbot360 from "../../assets/project_img/fxbot.jpg";
+import fxbot360 from "../../assets/project_img/fxbot.JPG";
 // import fxbo360 from "../../assets/project_img/fxbot360.jpg";
+import hub4tek from "../../assets/project_img/hub4tech.jpg";
 
 const data = [
   {
@@ -76,13 +77,21 @@ const data = [
     github: "https://github.com/M-tech1",
     demo: "https://enverge.ca/",
   },
+  // {
+  //   id: 9,
+  //   image: fxbot360,
+  //   title: "Forex Trading BOTs",
+  //   category: "Fintech",
+  //   github: "https://github.com/M-tech1/",
+  //   demo: "https://fxbot360-website-v1.vercel.app/",
+  // },
   {
     id: 9,
-    image: fxbot360,
-    title: "Forex Trading BOTs",
-    category: "Fintech",
-    github: "https://github.com/M-tech1/",
-    demo: "https://fxbot360-website-v1.vercel.app/",
+    image: hub4tek,
+    title: "Hub4Tek Inc",
+    category: "Web",
+    github: "https://github.com/M-tech1/hub4tek",
+    demo: "https://hub4teq.com/",
   },
 ];
 
