@@ -166,6 +166,7 @@ img {
 
 /* Gradient text utility */
 .gradient-text {
+  color: var(--color-white);
   background: var(--color-gradient-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -180,6 +181,7 @@ section > h5 {
 
 /* Section heading gradient */
 section > h2 {
+  color: var(--color-white);
   background: var(--color-gradient-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
