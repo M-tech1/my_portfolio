@@ -3,8 +3,8 @@ import "./about.css";
 import ME from "../../assets/me11.jpg";
 
 const stats = [
-  { value: 4, suffix: "+", label: "Years Experience" },
-  { value: 25, suffix: "+", label: "Clients Nationwide" },
+  { value: 6, suffix: "+", label: "Years Experience" },
+  { value: 15, suffix: "+", label: "Clients Worldwide" },
   { value: 20, suffix: "+", label: "Projects Completed" },
 ];
 
@@ -12,17 +12,20 @@ const useCounter = (ref, target) => {
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const observer = new IntersectionObserver(([entry]) => {
-      if (!entry.isIntersecting) return;
-      observer.disconnect();
-      let start = 0;
-      const step = () => {
-        start += 1;
-        el.textContent = start + (el.dataset.suffix || "");
-        if (start < target) requestAnimationFrame(step);
-      };
-      requestAnimationFrame(step);
-    }, { threshold: 0.5 });
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        observer.disconnect();
+        let start = 0;
+        const step = () => {
+          start += 1;
+          el.textContent = start + (el.dataset.suffix || "");
+          if (start < target) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      },
+      { threshold: 0.5 },
+    );
     observer.observe(el);
     return () => observer.disconnect();
   }, [ref, target]);
@@ -33,7 +36,13 @@ const StatCounter = ({ value, suffix, label }) => {
   useCounter(ref, value);
   return (
     <div className="about__stat">
-      <span className="about__stat-number gradient-text" ref={ref} data-suffix={suffix}>0{suffix}</span>
+      <span
+        className="about__stat-number gradient-text"
+        ref={ref}
+        data-suffix={suffix}
+      >
+        0{suffix}
+      </span>
       <span className="about__stat-label">{label}</span>
     </div>
   );
@@ -55,13 +64,18 @@ const About = () => {
 
           <div className="about__divider" />
 
-          <p className="about__bio">
-            I am a skilled Full-Stack Engineer with over 4 years of experience
-            building efficient and scalable software solutions across diverse
-            industries. I've led and contributed to impactful projects in
-            healthcare, government, eCommerce, and education. I excel at
-            bridging the gap between technical teams and business stakeholders,
-            translating complex requirements into clear, actionable insights.
+          <p>
+            Results-driven Software Engineer and AI Enthusiast with over 6years
+            of experience designing scalable, high-performance web applications
+            on the Frontend domain. Passionate about software architecture,
+            UI/UX optimization, system design and AI solutions, with a proven
+            track record of delivering complex, interactive platforms that
+            enhance user engagement. Adept at team work, managing projects, and
+            implementing modern best practices to drive engineering excellence.
+            Experienced in React, Next.js, TypeScript, Tailwind, modern UI
+            frameworks and the user of Agentic systems. Strong understanding of
+            performance profiling, accessibility (a11y), security best
+            practices, and DevOps-friendly frontend pipelines.
           </p>
 
           <a href="#contact" className="btn btn-primary about__cta">

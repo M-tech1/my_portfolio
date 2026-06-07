@@ -10,8 +10,8 @@ const Header = () => {
       <header className="header" id="header">
         <div className="container header__container" data-reveal>
           <h5>Hello, I'm</h5>
-          <h1 className="gradient-text"> Ake Martins</h1>
-          <h5 className="typewriter">Software Engineer</h5>
+          <h1 className="gradient-text">Martins Ake</h1>
+          <h5 className="typewriter">Software Engineer & AI Enthusiast</h5>
           <CTA />
           <HeaderSocials />
 

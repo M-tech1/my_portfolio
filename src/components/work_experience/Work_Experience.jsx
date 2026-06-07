@@ -32,19 +32,7 @@ const jobs = [
       "Developed and managed websites for the company and clients.",
     ],
   },
-  {
-    company: "Ai-MedCare",
-    position: "Team Lead",
-    dates: "December 2022 – Present",
-    current: true,
-    summary: [
-      "Designed and deployed an AI-powered medical platform using Gemini & MedLM LLMs, React + Vite, Tailwind CSS, and ShadCN — delivering personalised healthcare recommendations.",
-    ],
-    more: [
-      "Reduced patient wait times by 30% and improved health record documentation accuracy by 40%.",
-      "Streamlined clinical workflows and enhanced patient outcomes with measurable impact in healthcare delivery.",
-    ],
-  },
+
   {
     company: "FxBot360",
     position: "Software Engineer",
@@ -54,9 +42,7 @@ const jobs = [
       "Strategy developer and tester using MetaQuotes Language (MT4/MT5) for automated Forex trading bots.",
       "Developed responsive web interfaces and collaborated with the team to implement new trading features and strategies.",
     ],
-    more: [
-      "Optimized website performance and conducted regular code reviews.",
-    ],
+    more: ["Optimized website performance and conducted regular code reviews."],
   },
   {
     company: "Mitcrux Limited",
@@ -114,11 +100,18 @@ const JobCard = ({ company, position, dates, current, summary, more }) => {
             ))}
           </ul>
 
-          <button className="job__toggle" onClick={() => setExpanded((p) => !p)}>
+          <button
+            className="job__toggle"
+            onClick={() => setExpanded((p) => !p)}
+          >
             {expanded ? (
-              <>View less <FaAngleDoubleUp /></>
+              <>
+                View less <FaAngleDoubleUp />
+              </>
             ) : (
-              <>View more <FaAngleDoubleDown /></>
+              <>
+                View more <FaAngleDoubleDown />
+              </>
             )}
           </button>
         </>

@@ -45,6 +45,7 @@ header {
 .cta .btn-primary:hover {
   background: #fff;
   box-shadow: 0 0 20px var(--color-glow-strong);
+  color: var(--color-bg);
 }
 
 /* Header socials */
@@ -91,7 +92,11 @@ header {
   position: absolute;
   inset: -20px;
   border-radius: 12rem 12rem 0 0;
-  background: radial-gradient(ellipse at center, var(--color-glow) 0%, transparent 70%);
+  background: radial-gradient(
+    ellipse at center,
+    var(--color-glow) 0%,
+    transparent 70%
+  );
   animation: glowPulse 3s ease-in-out infinite alternate;
   z-index: 0;
 }
@@ -106,13 +111,22 @@ header {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 @keyframes glowPulse {
-  0%   { opacity: 0.4; }
-  100% { opacity: 0.8; }
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.8;
+  }
 }
 
 /* Scroll down */
@@ -134,8 +148,13 @@ header {
 }
 
 @keyframes bounce {
-  0%, 100% { transform: rotate(-90deg) translateX(0); }
-  50%       { transform: rotate(-90deg) translateX(6px); }
+  0%,
+  100% {
+    transform: rotate(-90deg) translateX(0);
+  }
+  50% {
+    transform: rotate(-90deg) translateX(6px);
+  }
 }
 
 /* Typewriter */
@@ -145,23 +164,38 @@ header {
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
-  animation: typing 4s steps(20) infinite, blink-caret 1s step-end infinite;
+  animation:
+    typing 3s steps(100) infinite,
+    blink-caret 1s step-end infinite;
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to   { width: 13em; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 23em;
+  }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50%      { border-color: var(--color-bg-variant); }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-bg-variant);
+  }
 }
 
 /* Medium devices */
 @media screen and (max-width: 1024px) {
-  header { height: 68vh; }
-  .header__container { margin-top: 1rem; }
+  header {
+    height: 68vh;
+  }
+  .header__container {
+    margin-top: 1rem;
+  }
   .me {
     width: 20rem;
     left: calc(50% - 10rem);
@@ -170,8 +204,16 @@ header {
 
 /* Small devices */
 @media only screen and (max-width: 600px) {
-  header { height: 100vh; overflow: hidden; }
-  .header__container { margin-top: 1.5rem; height: 100%; position: absolute; text-align: center; }
+  header {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .header__container {
+    margin-top: 1.5rem;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+  }
 
   .header__socials {
     position: fixed;
@@ -183,16 +225,23 @@ header {
     transform: translateX(-50%);
     display: none;
   }
-  .header__socials::after { display: none; }
+  .header__socials::after {
+    display: none;
+  }
 
-  .scroll__down { display: none; }
+  .scroll__down {
+    display: none;
+  }
 
   .cta {
     flex-direction: column;
     align-items: center;
   }
 
-  .cta .btn { width: 80%; text-align: center; }
+  .cta .btn {
+    width: 80%;
+    text-align: center;
+  }
 
   .me {
     width: 16rem;

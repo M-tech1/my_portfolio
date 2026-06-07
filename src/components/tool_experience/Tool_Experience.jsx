@@ -7,10 +7,14 @@ const skills = [
   {
     category: "Frontend",
     items: [
-      { name: "HTML / CSS", level: "Experienced" },
-      { name: "React.js / Next.js", level: "Experienced" },
-      { name: "Javascript / Typescript", level: "Experienced" },
-      { name: "Bootstrap / Tailwind CSS", level: "Experienced" },
+      {
+        name: "React.js / Next.js  ||  Javascript / Typescript",
+        level: "Experienced",
+      },
+      {
+        name: "HTML / CSS  ||  Bootstrap / Tailwind CSS / ",
+        level: "Experienced",
+      },
       { name: "React Native / Flutter", level: "Intermediate" },
       { name: "Python", level: "Intermediate" },
     ],
@@ -18,34 +22,31 @@ const skills = [
   {
     category: "Backend",
     items: [
-      { name: "Ruby on Rails", level: "Experienced" },
-      { name: "FireBase", level: "Experienced" },
-      { name: "AWS Tools", level: "Intermediate" },
+      { name: " Node JS & Express", level: "Experienced" },
+      { name: "AWS & FireBase", level: "Experienced" },
       { name: "Mobile Applications", level: "Intermediate" },
-      { name: "Node JS & Express", level: "Beginner" },
-      { name: "MySQL / PostgreSQL", level: "Beginner" },
+      { name: "MySQL / PostgreSQL", level: "Intermediate" },
+    ],
+  },
+
+  {
+    category: "AI Tools & workflow Automation",
+    items: [
+      { name: "Claude / Codex", level: "Experienced" },
+      { name: "OpenAI API (GPT-3.5, GPT-4)", level: "Intermediate" },
+      { name: "PayStack / Flutterwave", level: "Experienced" },
+      { name: "GitHub / GitLab", level: "Experienced" },
     ],
   },
   {
-    category: "Graphics & Design",
+    category: "Graphics Design & others",
     items: [
-      { name: "CorelDraw", level: "Experienced" },
-      { name: "Canva", level: "Experienced" },
-      { name: "Figma", level: "Intermediate" },
-      { name: "Adobe XD", level: "Intermediate" },
-      { name: "PhotoShop", level: "Intermediate" },
-      { name: "Illustrator", level: "Intermediate" },
-    ],
-  },
-  {
-    category: "Others",
-    items: [
+      { name: "CorelDraw / Photoshop", level: "Experienced" },
+      { name: "Canva / Figma", level: "Experienced" },
       { name: "Google Ads", level: "Experienced" },
       { name: "MetaTrader: Forex BOT", level: "Experienced" },
-      { name: "PayStack / Flutterwave", level: "Experienced" },
-      { name: "GitHub", level: "Experienced" },
+
       { name: "WordPress (CMS)", level: "Experienced" },
-      { name: "Locust & Selenium", level: "Intermediate" },
     ],
   },
 ];

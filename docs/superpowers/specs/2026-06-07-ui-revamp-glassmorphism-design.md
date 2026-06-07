@@ -171,7 +171,7 @@ border-radius: 1.5rem;
 ### Filter Bar
 - Row of pill buttons above the grid: All | Web | Mobile | Design
 - Active pill: cyan glass background + glow
-- Filter uses `data-category` attribute on each card; JS toggles `hidden` class
+- Filter uses React state (`activeFilter`) in `Portfolio.jsx`; cards render conditionally based on `category` matching `activeFilter`
 - Mobile: filter pills scroll horizontally (overflow-x: auto, no wrap)
 
 ### Card Data Update
