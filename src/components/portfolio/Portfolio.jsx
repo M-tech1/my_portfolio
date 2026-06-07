@@ -77,16 +77,16 @@ const data = [
     github: "https://github.com/M-tech1",
     demo: "https://enverge.ca/",
   },
-  // {
-  //   id: 9,
-  //   image: fxbot360,
-  //   title: "Forex Trading BOTs",
-  //   category: "Fintech",
-  //   github: "https://github.com/M-tech1/",
-  //   demo: "https://fxbot360-website-v1.vercel.app/",
-  // },
   {
     id: 9,
+    image: fxbot360,
+    title: "Forex Trading BOTs",
+    category: "Fintech",
+    github: "https://github.com/M-tech1/",
+    demo: "https://fxbot360-website-v1.vercel.app/",
+  },
+  {
+    id: 10,
     image: hub4tek,
     title: "Hub4Tek Inc",
     category: "Web",
@@ -105,7 +105,7 @@ const Portfolio = () => {
 
   return (
     <section id="portfolio" data-reveal>
-      <h5>My Recent</h5>
+      <h5>Recent</h5>
       <h2>Projects</h2>
 
       <div className="portfolio__filters">

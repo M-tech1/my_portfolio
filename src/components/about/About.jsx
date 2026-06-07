@@ -4,8 +4,8 @@ import ME from "../../assets/me11.jpg";
 
 const stats = [
   { value: 6, suffix: "+", label: "Years Experience" },
-  { value: 15, suffix: "+", label: "Clients Worldwide" },
-  { value: 20, suffix: "+", label: "Projects Completed" },
+  { value: 20, suffix: "+", label: "Clients Worldwide" },
+  { value: 30, suffix: "+", label: "Projects Completed" },
 ];
 
 const useCounter = (ref, target) => {
