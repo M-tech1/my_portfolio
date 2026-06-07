@@ -1,78 +1,154 @@
-.services__container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+.services__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
-.service{
-    background: var(--color-bg-variant);
-    border-radius: 0 0 2rem 2rem;
-    border: 1px solid var(--color-primary);
-    height: fit-content;
-    transition: var(--transition);
+.service__card {
+  position: relative;
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  overflow: hidden;
+  transition: var(--transition);
 }
 
-.service:hover{
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor:default;
+.service__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px var(--color-glow);
+  border-color: var(--color-bg-variant);
 }
 
-.service__head{
-    background: var(--color-primary);
-    padding:2rem;
-    border-radius: 0 0 2rem 2rem;
-    border-radius: 0 2rem 1rem rgba(0,0,0,0.1);
-
-   }
-
-   .service__head h3{
-    color: var(--color-bg);
-    font-size: 1.1rem;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    }
-
-
-    .service__list{
-     padding:1rem;
-    }
-        
-    .service__list li{
-    display:flex;
-    gap: 1rem;
-    margin-bottom: 0.8rem;
+/* Animated shimmer border */
+.service__shimmer {
+  position: absolute;
+  inset: -2px;
+  border-radius: 1.5rem;
+  background: conic-gradient(
+    from var(--angle, 0deg),
+    transparent 70%,
+    var(--color-bg-variant) 80%,
+    transparent 90%
+  );
+  animation: shimmerSpin 4s linear infinite;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
-        
-    .services__list-icon{
-    color: var(--color-primary);
-    margin-top:3px;
-    }
-        
-    .service__list p{
-    font-size: 0.8rem;
-    font-family: 'Open Sans', sans-serif;
-    }
 
+.service__card:hover .service__shimmer {
+  opacity: 1;
+}
 
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
 
+@keyframes shimmerSpin {
+  to { --angle: 360deg; }
+}
 
-     /* ========= Media files ============== */
-   @media screen and (max-width:1024px) {
-    .services__container{
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
+/* Content sits above shimmer */
+.service__icon,
+.service__title,
+.service__summary,
+.service__toggle,
+.service__list {
+  position: relative;
+  z-index: 1;
+}
 
-    .service{
-        height: auto;
-    }
-   }
+.service__icon {
+  font-size: 2.5rem;
+  color: var(--color-bg-variant);
+  filter: drop-shadow(0 0 8px var(--color-glow));
+  transition: var(--transition);
+}
 
+.service__card:hover .service__icon {
+  filter: drop-shadow(0 0 14px var(--color-glow-strong));
+  transform: scale(1.1);
+}
 
-   @media screen and (max-width:600px) {
-    .services__container{
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-   }
+.service__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.service__summary {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.6;
+}
+
+.service__toggle {
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  color: var(--color-bg-variant);
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: var(--transition);
+  font-family: "Poppins", sans-serif;
+}
+
+.service__toggle:hover {
+  background: rgba(79, 183, 222, 0.15);
+  box-shadow: 0 0 10px var(--color-glow);
+}
+
+.service__list {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.service__list.visible {
+  display: flex;
+}
+
+.service__list li {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 0.3rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-left: 0.5rem;
+}
+
+.service__list li::before {
+  content: "✦ ";
+  color: var(--color-bg-variant);
+  font-size: 0.7rem;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .services__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .services__container {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .service__card { padding: 1.5rem 1.2rem; }
+}

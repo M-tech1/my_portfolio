@@ -1,128 +1,84 @@
-import React from "react";
+import React, { useState } from "react";
 import "./services.css";
-import { BiCheck } from "react-icons/bi";
+import { BiPalette, BiCode, BiDotsHorizontalRounded } from "react-icons/bi";
+
+const services = [
+  {
+    icon: <BiPalette />,
+    title: "Graphics & UI/UX",
+    summary: "Professional design for brands, apps, and digital presence.",
+    items: [
+      "Professional Logo Design",
+      "Branding",
+      "Banner & Flier Design",
+      "Figma Design",
+      "Photo Frame",
+      "MOG Designs",
+    ],
+  },
+  {
+    icon: <BiCode />,
+    title: "Web / Mobile Development",
+    summary: "End-to-end web and mobile applications built to scale.",
+    items: [
+      "Web Applications",
+      "CMS Websites",
+      "Professional E-Commerce",
+      "Professional Blog Sites",
+      "Mobile Applications",
+      "Site & App Monetisation",
+      "SEO & Site Optimisation",
+      "Site Maintenance & Management",
+    ],
+  },
+  {
+    icon: <BiDotsHorizontalRounded />,
+    title: "Others",
+    summary: "Consulting, automation, and digital growth services.",
+    items: [
+      "Consultation",
+      "Forex Bot Development",
+      "Network & Server Installation",
+      "Content Creation",
+      "Social Media Management",
+    ],
+  },
+];
+
+const ServiceCard = ({ icon, title, summary, items }) => {
+  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <article className={`service__card ${expanded ? "expanded" : ""}`}>
+      <div className="service__shimmer" />
+      <div className="service__icon">{icon}</div>
+      <h3 className="service__title">{title}</h3>
+      <p className="service__summary">{summary}</p>
+      <button
+        className="service__toggle"
+        onClick={() => setExpanded((prev) => !prev)}
+      >
+        {expanded ? "Show less ↑" : "See all services ↓"}
+      </button>
+      <ul className={`service__list ${expanded ? "visible" : ""}`}>
+        {items.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    </article>
+  );
+};
 
 const Services = () => {
   return (
-    <section id="services">
-      <h5>What i offer</h5>
+    <section id="services" data-reveal>
+      <h5>What I offer</h5>
       <h2>Services</h2>
 
-      <div className="container services__container ">
-        <article className="service">
-          <div className="service__head">
-            <h3> Graphics & Ui/Ux </h3>
-          </div>
-          <ul className="service__list">
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>Professional logo Design</p>
-            </li>
-
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>Branding</p>
-            </li>
-
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>Banner & flier Design</p>
-            </li>
-
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>Figma Design</p>
-            </li>
-
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>Photo frame</p>
-            </li>
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>MOG Designs</p>
-            </li>
-          </ul>
-        </article>
-
-        <article className="service">
-          <div className="service__head">
-            <h3>Web / Mobile Development </h3>
-          </div>
-          <ul className="service__list">
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>Web Applications</p>
-            </li>
-
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>CMS - website</p>
-            </li>
-
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>Professional E-Commerce websites</p>
-            </li>
-
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>Professional Blog Site</p>
-            </li>
-
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>Professional Mobile applications</p>
-            </li>
-
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>Site & App monitizations (Adsense & Admob)</p>
-            </li>
-
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>SEO and site optimizations</p>
-            </li>
-
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>Site maintainance and management</p>
-            </li>
-          </ul>
-        </article>
-
-        <article className="service">
-          <div className="service__head">
-            <h3> Others </h3>
-          </div>
-          <ul className="service__list">
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>Consultation</p>
-            </li>
-
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>Forex Bot development and integration</p>
-            </li>
-
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>Network and Server installation</p>
-            </li>
-
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>Content creation</p>
-            </li>
-
-            <li>
-              <BiCheck className="services__list-icon" />
-              <p>Social media account management</p>
-            </li>
-          </ul>
-        </article>
+      <div className="container services__container">
+        {services.map((s) => (
+          <ServiceCard key={s.title} {...s} />
+        ))}
       </div>
     </section>
   );
