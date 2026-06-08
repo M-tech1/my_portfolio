@@ -20,9 +20,13 @@ header {
   display: flex;
   gap: 1.2rem;
   justify-content: center;
+  align-items: center;
 }
 
 .cta .btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
   backdrop-filter: blur(10px);
   background: var(--color-glass);
   border: 1px solid var(--color-glass-border);
@@ -205,26 +209,24 @@ header {
 /* Small devices */
 @media only screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     overflow: hidden;
   }
+
   .header__container {
-    margin-top: 1.5rem;
-    height: 100%;
-    position: absolute;
+    min-height: 100vh;
+    height: auto;
+    position: relative;
+    margin-top: 0;
+    padding-top: 2rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .header__socials {
-    position: fixed;
-    flex-direction: row;
-    gap: 0.8rem;
-    top: auto;
-    bottom: 5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: none;
-  }
+  .header__socials,
   .header__socials::after {
     display: none;
   }
@@ -234,20 +236,30 @@ header {
   }
 
   .cta {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
   }
 
   .cta .btn {
-    width: 80%;
-    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .typewriter {
+    max-width: 100%;
   }
 
   .me {
     width: 16rem;
     height: 70vh;
-    left: calc(50% - 8rem);
+    left: auto;
     position: relative;
+    margin-top: 1rem;
     margin-bottom: 0;
   }
 }
