@@ -11,6 +11,7 @@ import eugym from "../../assets/project_img/eugym.jpg";
 import fxbot360 from "../../assets/project_img/fxbot.JPG";
 // import fxbo360 from "../../assets/project_img/fxbot360.jpg";
 import hub4tek from "../../assets/project_img/hub4tech.jpg";
+import EGCC from "../../assets/project_img/egcc.jpg";
 
 const data = [
   {
@@ -92,6 +93,15 @@ const data = [
     category: "Web",
     github: "https://github.com/M-tech1/hub4tek",
     demo: "https://hub4teq.com/",
+  },
+
+  {
+    id: 11,
+    image: EGCC,
+    title: "EGCC ",
+    category: "Web",
+    github: "https://github.com/M-tech1/EGCC-pyakasa",
+    demo: "https://egcc-pyakasa.vercel.app/",
   },
 ];
 

@@ -20,9 +20,10 @@ const jobs = [
   },
   {
     company: "Enverge Limited",
-    position: "Data Analyst & Software Developer",
-    dates: "November 2021 – October 2023",
+    position: "Data Analyst & Software Developer (Currently on contract)",
+    dates: "November 2021 – October 2025",
     current: false,
+
     summary: [
       "Built and deployed a mobile VTU application for Airtime, Data, Cable TV, and electricity bill payments, integrated with Paystack and published on Google Play Store.",
       "Applied data analysis using Microsoft Excel to measure and document traffic statistics across all mobile network operators in Nigeria.",
@@ -49,6 +50,7 @@ const jobs = [
     position: "Manager",
     dates: "December 2019 – Present",
     current: true,
+
     summary: [
       "Creating quality and professional software for companies and businesses worldwide.",
       "Conducting user research and gathering feedback to improve UX for existing software products.",
@@ -63,6 +65,7 @@ const jobs = [
     position: "Freelance Developer",
     dates: "2023",
     current: false,
+
     summary: [
       "Built an intuitive Administrator Dashboard using React, Tailwind CSS, and ReCharts with interactive analytics and data visualization — improving dashboard performance by 25% and operational efficiency by 30%.",
     ],
