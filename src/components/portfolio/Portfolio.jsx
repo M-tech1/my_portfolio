@@ -11,7 +11,7 @@ import eugym from "../../assets/project_img/eugym.jpg";
 import fxbot360 from "../../assets/project_img/fxbot.JPG";
 // import fxbo360 from "../../assets/project_img/fxbot360.jpg";
 import hub4tek from "../../assets/project_img/hub4tech.jpg";
-import EGCC from "../../assets/project_img/egcc.jpg";
+import egcc from "../../assets/project_img/egcc-image.jpg";
 
 const data = [
   {
@@ -97,7 +97,7 @@ const data = [
 
   {
     id: 11,
-    image: EGCC,
+    image: egcc,
     title: "EGCC ",
     category: "Web",
     github: "https://github.com/M-tech1/EGCC-pyakasa",
