@@ -10,7 +10,7 @@ import bead from "../../assets/project_img/beadPage.jpg";
 import eugym from "../../assets/project_img/eugym.jpg";
 import fxbot360 from "../../assets/project_img/fxbot.JPG";
 import hub4tek from "../../assets/project_img/hub4tech.jpg";
-import egcc from "../../assets/project_img/egcc_pya.jpeg";
+import egcc from "../../assets/project_img/egcc_pya.jpg";
 
 const data = [
   {
