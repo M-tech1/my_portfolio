@@ -9,9 +9,8 @@ import vvs from "../../assets/project_img/vvs.png";
 import bead from "../../assets/project_img/beadPage.jpg";
 import eugym from "../../assets/project_img/eugym.jpg";
 import fxbot360 from "../../assets/project_img/fxbot.JPG";
-// import fxbo360 from "../../assets/project_img/fxbot360.jpg";
 import hub4tek from "../../assets/project_img/hub4tech.jpg";
-import egcc from "../../assets/project_img/egcc-image.jpg";
+import egcc from "../../assets/project_img/egcc_pya.jpg";
 
 const data = [
   {
