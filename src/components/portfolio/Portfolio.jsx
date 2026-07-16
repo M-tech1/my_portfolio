@@ -2,15 +2,17 @@ import React, { useState } from "react";
 import "./portfolio.css";
 import enverge from "../../assets/project_img/enverge.JPG";
 import MedEx from "../../assets/project_img/medex.JPG";
-import Vreg from "../../assets/project_img/vreg.PNG";
 import aimedcare from "../../assets/project_img/aiMedcare.JPG";
 import azana from "../../assets/project_img/azana.png";
 import vvs from "../../assets/project_img/vvs.png";
 import bead from "../../assets/project_img/beadPage.jpg";
 import eugym from "../../assets/project_img/eugym.jpg";
 import fxbot360 from "../../assets/project_img/fxbot.JPG";
-import hub4tek from "../../assets/project_img/hub4tech.jpg";
 import egcc from "../../assets/project_img/egcc_pya.jpg";
+import hub4teq from "../../assets/project_img/hub4teq.jpg";
+import Vreg from "../../assets/project_img/vregAPP.jpg";
+import arziqi from "../../assets/project_img/arziqi.jpg";
+import care4meApp from "../../assets/project_img/care4meApp.jpg";
 
 const data = [
   {
@@ -63,11 +65,11 @@ const data = [
   },
   {
     id: 7,
-    image: azana,
-    title: "Azana",
+    image: arziqi,
+    title: "Arziqi",
     category: "Fintech",
     github: "https://github.com/",
-    demo: "https://azana.com",
+    demo: "https://flego.io",
   },
   {
     id: 8,
@@ -87,11 +89,11 @@ const data = [
   },
   {
     id: 10,
-    image: hub4tek,
+    image: hub4teq,
     title: "Hub4Tek Inc",
     category: "Web",
     github: "https://github.com/M-tech1/hub4tek",
-    demo: "https://hub4teq.com/",
+    demo: "https://hub4teq.vercel.app",
   },
 
   {
@@ -101,6 +103,14 @@ const data = [
     category: "Web",
     github: "https://github.com/M-tech1/EGCC-pyakasa",
     demo: "https://egcc-pyakasa.vercel.app/",
+  },
+  {
+    id: 12,
+    image: care4meApp,
+    title: "Care4Me",
+    category: "Web",
+    github: "https://github.com/M-tech1/Care4Me",
+    demo: "care4me-virid.vercel.app",
   },
 ];
 
